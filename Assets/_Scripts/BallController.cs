@@ -2,27 +2,20 @@ using UnityEngine;
 
 public class BallController : MonoBehaviour
 {
-    private bool isDragging = false;
-    private float distance;
+    Vector3 _mousePosition;
 
-    void OnMouseDown()
+    private Vector3 GetMousePos()
     {
-        distance = Vector3.Distance(transform.position, Camera.main.transform.position);
-        isDragging = true;
+        return Camera.main.WorldToScreenPoint(transform.position);
+    }
+    
+    private void OnMouseDown() {
+        Debug.Log("Clicking");
+        _mousePosition = Input.mousePosition - GetMousePos();
     }
 
-    void OnMouseUp()
-    {
-        isDragging = false;
-    }
-
-    void Update()
-    {
-        if (isDragging)
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Vector3 rayPoint = ray.GetPoint(distance);
-            transform.position = rayPoint;
-        }
+    private void OnMouseDrag() {
+        Debug.Log("Dragging");
+        transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition - _mousePosition);
     }
 }
