@@ -54,5 +54,22 @@ public class BallController : MonoBehaviour
             Vector3 direction = _targetPosition - transform.position;
             _rb.velocity = direction * dragSpeed;
         }
+
+        // Always apply visual rolling when the ball is moving
+        ApplyRollingEffect(_rb.velocity);
     }
+
+
+    private void ApplyRollingEffect(Vector3 velocity)
+    {
+        if (velocity.sqrMagnitude < 0.001f) return; // Ignore if not moving
+
+        float radius = transform.localScale.x * 0.5f; // Assumes uniform scaling (sphere)
+        Vector3 rotationAxis = Vector3.Cross(Vector3.up, velocity.normalized);
+        float angularDistance = velocity.magnitude * Time.fixedDeltaTime / radius;
+        Quaternion deltaRotation = Quaternion.AngleAxis(Mathf.Rad2Deg * angularDistance, rotationAxis);
+        transform.rotation = deltaRotation * transform.rotation;
+    }
+
+
 }

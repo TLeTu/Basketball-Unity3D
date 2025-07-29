@@ -2608,9 +2608,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragSpeed: 10
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 5
+  airResistance: 0.01
+  magnusCoefficient: 0.1
+  spinDecay: 0.98
 --- !u!1 &8510023965643510136
 GameObject:
   m_ObjectHideFlags: 0
