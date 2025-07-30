@@ -2409,7 +2409,8 @@ GameObject:
   - component: {fileID: 6546998822379535240}
   - component: {fileID: 1899415116435094025}
   - component: {fileID: 2785112172942250724}
-  - component: {fileID: 3588048316271622459}
+  - component: {fileID: 3708912782399049475}
+  - component: {fileID: 9102074398560236731}
   m_Layer: 0
   m_Name: Ball
   m_TagString: ballTag
@@ -2595,7 +2596,7 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 0
---- !u!114 &3588048316271622459
+--- !u!114 &3708912782399049475
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2607,9 +2608,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ab0de2610b58007c88e7759bd41d330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragSpeed: 50
-  maxVelocity: 20
-  rollingMultiplier: 0.5
+  dragSpeed: 10
+--- !u!114 &9102074398560236731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7550073835642411294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36177a20ba0af59d1871b6be90c5d679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  landingTarget: {fileID: 0}
+  yMax: 0
+  g: 20
 --- !u!1 &8510023965643510136
 GameObject:
   m_ObjectHideFlags: 0
