@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638893732550000000
-    m_Hash: 2706541874
+      ticks: 638894508880000000
+    m_Hash: 3524581048
   m_LockFileStatus:
     m_FilePath: /home/leetuws/Shared/Projects/Basketball-Unity3D/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638893732550000000
-    m_Hash: 3586516730
+      ticks: 638894508880000000
+    m_Hash: 3304930461
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -358,12 +358,12 @@ m_ResolvedPackages:
   isDeprecated: 0
   deprecationMessage: 
   fingerprint: 
-- packageId: com.unity.ide.visualstudio@2.0.22
+- packageId: com.unity.ide.visualstudio@2.0.23
   testable: 0
   isDirectDependency: 1
-  version: 2.0.22
+  version: 2.0.23
   source: 1
-  resolvedPath: /home/leetuws/Shared/Projects/Basketball-Unity3D/Library/PackageCache/com.unity.ide.visualstudio@2.0.22
+  resolvedPath: /home/leetuws/Shared/Projects/Basketball-Unity3D/Library/PackageCache/com.unity.ide.visualstudio@2.0.23
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -372,7 +372,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: assets
+  type: 
   description: Code editor integration for supporting Visual Studio as code editor
     for unity. Adds support for generating csproj files for intellisense purposes,
     auto discovery of installations, etc.
@@ -433,13 +433,13 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638326061910000000
+  datePublishedTicks: 638786696173840000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-    revision: 700b44077345e97d37d464ff25507638983aed64
+    revision: 0fe3b29f9aff2b90b9f0962ae35036a824d3dd6b
     path: 
   unityLifecycle:
     version: 2.0.22

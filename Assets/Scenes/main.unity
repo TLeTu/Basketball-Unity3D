@@ -127,6 +127,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3588048316271622459, guid: c62ab4a097aeb1f4ba2219afe80e5c10,
+        type: 3}
+      propertyPath: playerPosition
+      value: 
+      objectReference: {fileID: 2878013518752252510}
+    - target: {fileID: 3588048316271622459, guid: c62ab4a097aeb1f4ba2219afe80e5c10,
+        type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7550073835642411294, guid: c62ab4a097aeb1f4ba2219afe80e5c10,
         type: 3}
       propertyPath: m_Name
@@ -194,6 +204,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588048316271622459, guid: c62ab4a097aeb1f4ba2219afe80e5c10,
+        type: 3}
+      propertyPath: playerPosition
+      value: 
+      objectReference: {fileID: 2878013518752252510}
+    - target: {fileID: 3588048316271622459, guid: c62ab4a097aeb1f4ba2219afe80e5c10,
+        type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7550073835642411294, guid: c62ab4a097aeb1f4ba2219afe80e5c10,
         type: 3}
@@ -337,6 +357,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3588048316271622459, guid: c62ab4a097aeb1f4ba2219afe80e5c10,
+        type: 3}
+      propertyPath: playerPosition
+      value: 
+      objectReference: {fileID: 2878013518752252510}
+    - target: {fileID: 3588048316271622459, guid: c62ab4a097aeb1f4ba2219afe80e5c10,
+        type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7550073835642411294, guid: c62ab4a097aeb1f4ba2219afe80e5c10,
         type: 3}
       propertyPath: m_Name
@@ -411,6 +441,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3588048316271622459, guid: c62ab4a097aeb1f4ba2219afe80e5c10,
+        type: 3}
+      propertyPath: playerPosition
+      value: 
+      objectReference: {fileID: 2878013518752252510}
+    - target: {fileID: 3588048316271622459, guid: c62ab4a097aeb1f4ba2219afe80e5c10,
+        type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7550073835642411294, guid: c62ab4a097aeb1f4ba2219afe80e5c10,
         type: 3}
       propertyPath: m_Name
@@ -455,7 +495,7 @@ GameObject:
   - component: {fileID: 2878013519238791930}
   - component: {fileID: 2878013519775662897}
   - component: {fileID: 2878013519071019726}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CubeBottom
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -493,7 +533,7 @@ GameObject:
   - component: {fileID: 2878013519238791932}
   - component: {fileID: 2878013519775662899}
   - component: {fileID: 2878013519071019728}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -512,7 +552,7 @@ GameObject:
   - component: {fileID: 2878013519238791933}
   - component: {fileID: 2878013519775662900}
   - component: {fileID: 2878013519071019729}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -531,7 +571,7 @@ GameObject:
   - component: {fileID: 2878013519238791934}
   - component: {fileID: 2878013519775662901}
   - component: {fileID: 2878013519071019730}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -550,7 +590,7 @@ GameObject:
   - component: {fileID: 2878013519238791935}
   - component: {fileID: 2878013519775662902}
   - component: {fileID: 2878013519071019731}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -569,7 +609,7 @@ GameObject:
   - component: {fileID: 2878013519238791936}
   - component: {fileID: 2878013519775662903}
   - component: {fileID: 2878013519071019732}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -836,7 +876,7 @@ GameObject:
   - component: {fileID: 2878013519238791945}
   - component: {fileID: 2878013519775662907}
   - component: {fileID: 2878013519071019741}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -1122,8 +1162,8 @@ GameObject:
   - component: {fileID: 2878013519238791953}
   - component: {fileID: 2878013519775662908}
   - component: {fileID: 2878013519071019748}
-  m_Layer: 0
-  m_Name: Cube
+  m_Layer: 3
+  m_Name: CubeF
   m_TagString: 
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1157,7 +1197,7 @@ GameObject:
   - component: {fileID: 2878013519238791955}
   - component: {fileID: 2878013519775662909}
   - component: {fileID: 2878013519071019750}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -26520,6 +26560,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588048316271622459, guid: c62ab4a097aeb1f4ba2219afe80e5c10,
+        type: 3}
+      propertyPath: playerPosition
+      value: 
+      objectReference: {fileID: 2878013518752252510}
+    - target: {fileID: 3588048316271622459, guid: c62ab4a097aeb1f4ba2219afe80e5c10,
+        type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7550073835642411294, guid: c62ab4a097aeb1f4ba2219afe80e5c10,
         type: 3}

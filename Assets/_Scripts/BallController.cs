@@ -30,7 +30,6 @@ public class BallController : MonoBehaviour
         _offset = transform.position - mouseWorld;
 
         _dragging = true;
-        _rb.isKinematic = false;
     }
 
     private void OnMouseDrag()
