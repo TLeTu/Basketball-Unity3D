@@ -10496,7 +10496,7 @@ GameObject:
   - component: {fileID: 496692479}
   m_Layer: 0
   m_Name: launchTarget
-  m_TagString: 
+  m_TagString: Hoop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15931,12 +15931,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!1 &977325914 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7550073835642411294, guid: c62ab4a097aeb1f4ba2219afe80e5c10,
-    type: 3}
-  m_PrefabInstance: {fileID: 1800413770}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &977346962
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18837,7 +18831,7 @@ GameObject:
   - component: {fileID: 1479409739}
   m_Layer: 0
   m_Name: BasketRingJoint
-  m_TagString: Hoop
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22342,11 +22336,7 @@ PrefabInstance:
     - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7550073835642411294, guid: c62ab4a097aeb1f4ba2219afe80e5c10,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1800413777}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c62ab4a097aeb1f4ba2219afe80e5c10, type: 3}
 --- !u!4 &1800413771 stripped
 Transform:
@@ -22354,21 +22344,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1800413770}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1800413777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977325914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36177a20ba0af59d1871b6be90c5d679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  landingTarget: {fileID: 496692477}
-  yMax: 0
-  g: 20
 --- !u!1 &1840892137
 GameObject:
   m_ObjectHideFlags: 0

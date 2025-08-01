@@ -11,7 +11,10 @@ public class BallController : MonoBehaviour
     private bool _isDragging = false;
     private Vector3 _dragStartPos;
     private Vector3 _dragEndPos;
-    private float _minSwipeDistance = 50f; // pixels, adjust as needed
+    private float _dragStartTime;
+    private float _dragEndTime;
+    public float _minSwipeDistance = 50f; // pixels, adjust as needed
+    public float minSwipeSpeed = 1000f; // pixels per second, adjust as needed
 
     public float dragSpeed = 10f;
 
@@ -32,6 +35,7 @@ public class BallController : MonoBehaviour
         _rb.useGravity = false; // Disable gravity while dragging
         _mousePosition = Input.mousePosition - GetMousePos();
         _dragStartPos = Input.mousePosition;
+        _dragStartTime = Time.time;
     }
 
     private void OnMouseDrag()
@@ -45,15 +49,18 @@ public class BallController : MonoBehaviour
         _isDragging = false;
         _rb.useGravity = true; // Re-enable gravity after dragging
         _dragEndPos = Input.mousePosition;
+        _dragEndTime = Time.time;
 
         Vector3 swipe = _dragEndPos - _dragStartPos;
+        float swipeDuration = _dragEndTime - _dragStartTime;
+        float swipeSpeed = swipe.magnitude / Mathf.Max(swipeDuration, 0.001f); // pixels per second
 
-        // Check if swipe is upward and long enough
-        if (swipe.magnitude > _minSwipeDistance && swipe.y > Mathf.Abs(swipe.x))
+        // Check if swipe is upward, long enough, and fast enough
+        if (swipe.magnitude > _minSwipeDistance && swipe.y > Mathf.Abs(swipe.x) && swipeSpeed > minSwipeSpeed)
         {
             if (_launchControl != null)
             {
-                _launchControl.LaunchBall(gameObject); // Pass swipe vector for launch force
+                _launchControl.LaunchBall(gameObject);
             }
             else
             {
