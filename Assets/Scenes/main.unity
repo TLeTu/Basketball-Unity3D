@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 707710910}
   m_Layer: 0
   m_Name: launchTarget
-  m_TagString: 
+  m_TagString: Hoop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1496,7 +1496,7 @@ GameObject:
   - component: {fileID: 2878013519591113516}
   m_Layer: 0
   m_Name: basketRing
-  m_TagString: Hoop
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

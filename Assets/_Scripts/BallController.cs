@@ -7,7 +7,11 @@ public class BallController : MonoBehaviour
     private LaunchControl _launchControl;
     private Rigidbody _rb;
     private Vector3 _mousePosition;
+    private Vector3 _targetPosition;
     private bool _isDragging = false;
+    private Vector3 _dragStartPos;
+    private Vector3 _dragEndPos;
+    private float _minSwipeDistance = 50f; // pixels, adjust as needed
 
     public float dragSpeed = 10f;
 
@@ -25,34 +29,61 @@ public class BallController : MonoBehaviour
 
     private void OnMouseDown()
     {
+        _rb.useGravity = false; // Disable gravity while dragging
         _mousePosition = Input.mousePosition - GetMousePos();
+        _dragStartPos = Input.mousePosition;
     }
 
     private void OnMouseDrag()
     {
         _isDragging = true;
-        Vector3 targetPosition = _mainCamera.ScreenToWorldPoint(Input.mousePosition - _mousePosition);
-        _rb.MovePosition(targetPosition);
+        _targetPosition = _mainCamera.ScreenToWorldPoint(Input.mousePosition - _mousePosition);
     }
 
     private void OnMouseUp()
     {
         _isDragging = false;
-        if (_launchControl != null)
+        _rb.useGravity = true; // Re-enable gravity after dragging
+        _dragEndPos = Input.mousePosition;
+
+        Vector3 swipe = _dragEndPos - _dragStartPos;
+
+        // Check if swipe is upward and long enough
+        if (swipe.magnitude > _minSwipeDistance && swipe.y > Mathf.Abs(swipe.x))
         {
-            _launchControl.LaunchBall(gameObject);
+            if (_launchControl != null)
+            {
+                _launchControl.LaunchBall(gameObject); // Pass swipe vector for launch force
+            }
+            else
+            {
+                Debug.LogWarning("LaunchControl not found in the scene.");
+            }
         }
-        else
-        {
-            Debug.LogWarning("LaunchControl not found in the scene.");
-        }
+        // else: just drop the ball, gravity will take over
     }
 
     private void FixedUpdate()
     {
-        if (!_isDragging)
+        if (_isDragging)
         {
-            ApplyRollingEffect(_rb.velocity);
+            // Lerp towards the target position while dragging
+            Vector3 desiredPosition = Vector3.Lerp(transform.position, _targetPosition, dragSpeed * Time.fixedDeltaTime);
+            
+            // Prevent tunneling using raycast
+            Vector3 currentPosition = transform.position;
+            Vector3 direction = desiredPosition - currentPosition;
+            Ray ray = new Ray(currentPosition, direction);
+            RaycastHit hit;
+            
+            if (!Physics.Raycast(ray, out hit, direction.magnitude))
+                _rb.MovePosition(desiredPosition);
+            else
+                _rb.MovePosition(hit.point);
+        }
+        else
+        {
+            // ApplyRollingEffect(_rb.velocity);
         }
 
     }

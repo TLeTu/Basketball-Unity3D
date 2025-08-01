@@ -31,10 +31,10 @@ public class LaunchControl : MonoBehaviour
     {
         // Log 
         Debug.Log("Launching ball with LaunchControl");
-        y_0 = this.transform.position.y - landingTarget.transform.position.y;
+        y_0 = launchObject.transform.position.y - landingTarget.transform.position.y;
         // Use the position directly under the ball (this) for x and z
-        x = landingTarget.transform.position.x - this.transform.position.x;
-        z = landingTarget.transform.position.z - this.transform.position.z;
+        x = landingTarget.transform.position.x - launchObject.transform.position.x;
+        z = landingTarget.transform.position.z - launchObject.transform.position.z;
         // Launch this using rigid body
         Rigidbody thisBody = launchObject.GetComponent<Rigidbody>();
         thisBody.velocity = CalculateVelocity();
