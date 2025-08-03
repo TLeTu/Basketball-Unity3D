@@ -3,36 +3,42 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class BallController : MonoBehaviour
 {
+    #region Fields & Properties
+    // References
     private Camera _mainCamera;
-    private LaunchControl _launchControl;
+    private LaunchController _launchControl;
     private Rigidbody _rb;
+
+    // Dragging state
+    private bool _isDragging = false;
     private Vector3 _mousePosition;
     private Vector3 _targetPosition;
-    private bool _isDragging = false;
+
+    // Swipe detection
     private Vector3 _dragStartPos;
     private Vector3 _dragEndPos;
     private float _dragStartTime;
     private float _dragEndTime;
-    public float _minSwipeDistance = 50f; // pixels, adjust as needed
-    public float minSwipeSpeed = 1000f; // pixels per second, adjust as needed
+    public float _minSwipeDistance = 50f; // Minimum swipe distance in pixels
+    public float minSwipeSpeed = 1000f;   // Minimum swipe speed in pixels/sec
 
+    // Drag movement
     public float dragSpeed = 10f;
+    #endregion
 
+    #region Unity Methods
     private void Awake()
     {
+        // Cache references
         _rb = GetComponent<Rigidbody>();
         _mainCamera = Camera.main;
-        _launchControl = FindObjectOfType<LaunchControl>();
-    }
-
-    private Vector3 GetMousePos()
-    {
-        return _mainCamera.WorldToScreenPoint(transform.position);
+        _launchControl = FindObjectOfType<LaunchController>();
     }
 
     private void OnMouseDown()
     {
-        _rb.useGravity = false; // Disable gravity while dragging
+        // Begin dragging: disable gravity and record start position/time
+        _rb.useGravity = false;
         _mousePosition = Input.mousePosition - GetMousePos();
         _dragStartPos = Input.mousePosition;
         _dragStartTime = Time.time;
@@ -40,22 +46,25 @@ public class BallController : MonoBehaviour
 
     private void OnMouseDrag()
     {
+        // Update dragging state and target position
         _isDragging = true;
         _targetPosition = _mainCamera.ScreenToWorldPoint(Input.mousePosition - _mousePosition);
     }
 
     private void OnMouseUp()
     {
+        // End dragging: re-enable gravity and record end position/time
         _isDragging = false;
-        _rb.useGravity = true; // Re-enable gravity after dragging
+        _rb.useGravity = true;
         _dragEndPos = Input.mousePosition;
         _dragEndTime = Time.time;
 
+        // Calculate swipe vector, duration, and speed
         Vector3 swipe = _dragEndPos - _dragStartPos;
         float swipeDuration = _dragEndTime - _dragStartTime;
-        float swipeSpeed = swipe.magnitude / Mathf.Max(swipeDuration, 0.001f); // pixels per second
+        float swipeSpeed = swipe.magnitude / Mathf.Max(swipeDuration, 0.001f); // pixels/sec
 
-        // Check if swipe is upward, long enough, and fast enough
+        // Launch only if swipe is upward, long enough, and fast enough
         if (swipe.magnitude > _minSwipeDistance && swipe.y > Mathf.Abs(swipe.x) && swipeSpeed > minSwipeSpeed)
         {
             if (_launchControl != null)
@@ -76,13 +85,13 @@ public class BallController : MonoBehaviour
         {
             // Lerp towards the target position while dragging
             Vector3 desiredPosition = Vector3.Lerp(transform.position, _targetPosition, dragSpeed * Time.fixedDeltaTime);
-            
+
             // Prevent tunneling using raycast
             Vector3 currentPosition = transform.position;
             Vector3 direction = desiredPosition - currentPosition;
             Ray ray = new Ray(currentPosition, direction);
             RaycastHit hit;
-            
+
             if (!Physics.Raycast(ray, out hit, direction.magnitude))
                 _rb.MovePosition(desiredPosition);
             else
@@ -90,12 +99,20 @@ public class BallController : MonoBehaviour
         }
         else
         {
-            // ApplyRollingEffect(_rb.velocity);
+            // Apply rolling effect when not dragging
+            ApplyRollingEffect(_rb.velocity);
         }
+    }
+    #endregion
 
+    #region Helper Methods
+    // Get the mouse position in screen space for the ball
+    private Vector3 GetMousePos()
+    {
+        return _mainCamera.WorldToScreenPoint(transform.position);
     }
 
-
+    // Simulate rolling rotation based on velocity
     private void ApplyRollingEffect(Vector3 velocity)
     {
         if (velocity.sqrMagnitude < 0.001f) return; // Ignore if not moving
@@ -106,6 +123,5 @@ public class BallController : MonoBehaviour
         Quaternion deltaRotation = Quaternion.AngleAxis(Mathf.Rad2Deg * angularDistance, rotationAxis);
         transform.rotation = deltaRotation * transform.rotation;
     }
-
-
+    #endregion
 }

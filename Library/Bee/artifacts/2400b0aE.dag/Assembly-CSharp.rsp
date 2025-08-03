@@ -359,7 +359,12 @@
 -analyzer:"/home/leetuws/Unity/Hub/Editor/2022.3.62f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 "Assets/_Scripts/BallController.cs"
-"Assets/_Scripts/LaunchControl.cs"
+"Assets/_Scripts/GameManager.cs"
+"Assets/_Scripts/HoopTrigger.cs"
+"Assets/_Scripts/LaunchController.cs"
+"Assets/_Scripts/RimCollider.cs"
+"Assets/_Scripts/ScoreManager.cs"
+"Assets/_Scripts/ScoreUI.cs"
 -langversion:9.0
 /deterministic
 /optimize+
