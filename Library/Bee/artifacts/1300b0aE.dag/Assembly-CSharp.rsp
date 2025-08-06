@@ -363,6 +363,7 @@
 -analyzer:"/home/leetuws/Unity/Hub/Editor/2022.3.62f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/home/leetuws/Unity/Hub/Editor/2022.3.62f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/TutorialInfo/Scripts/Readme.cs"
+"Assets/_Scripts/AudioController.cs"
 "Assets/_Scripts/BackBtn.cs"
 "Assets/_Scripts/BallCarousel.cs"
 "Assets/_Scripts/BallController.cs"

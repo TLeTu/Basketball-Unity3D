@@ -24,6 +24,7 @@ public class BallController : MonoBehaviour
 
     // Drag movement
     public float dragSpeed = 10f;
+
     #endregion
 
     #region Unity Methods
@@ -34,7 +35,6 @@ public class BallController : MonoBehaviour
         _mainCamera = Camera.main;
         _launchControl = FindObjectOfType<LaunchController>();
     }
-
 
     private void HandlePointerDown(Vector3 pointerPosition)
     {

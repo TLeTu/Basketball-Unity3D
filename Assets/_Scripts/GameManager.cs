@@ -8,9 +8,12 @@ public class GameManager : MonoBehaviour
     private bool _touchedRim = false;
     private bool _readyForGoal = false;
     private float _perfectTimer = 0f;
-    private const float PERFECT_THRESHOLD = 0.2f; // seconds
+    [SerializeField] private const float PERFECT_THRESHOLD = 100f; // seconds
     [SerializeField] private GameObject[] _balls;
-
+    public AudioClip passSound;
+    public AudioClip backgroundMusic; // Added for background music
+    public AudioClip perfectSound; // Sound played on perfect score
+    private AudioSource _audioSource;
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -20,6 +23,17 @@ public class GameManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        _audioSource = GetComponent<AudioSource>();
+    }
+    private void Start()
+    {
+
+        if (backgroundMusic != null && _audioSource != null)
+        {
+            _audioSource.clip = backgroundMusic;
+            _audioSource.loop = true;
+            _audioSource.Play();
+        }
     }
 
     private void Update()
@@ -36,12 +50,21 @@ public class GameManager : MonoBehaviour
         {
             if (_readyForGoal)
             {
+                // Play pass sound if assigned
+                if (passSound != null && _audioSource != null)
+                {
+                    _audioSource.PlayOneShot(passSound, 2f); // Play with a higher volume of 0.5f
+                }
                 if (_perfectTimer <= PERFECT_THRESHOLD && !_touchedRim)
                 {
+                    if (perfectSound != null && _audioSource != null)
+                    {
+                        _audioSource.PlayOneShot(perfectSound, 2f); // Play with a higher volume of 1f
+                    }
                     // Perfect score!
                     if (ScoreManager.Instance != null)
                     {
-                        ScoreManager.Instance.AddScore(2); // Perfect shot
+                        ScoreManager.Instance.AddScore(2, true); // Perfect shot
                         Debug.Log("Perfect score!");
                         _touchedRim = false; // Reset rim touch state
                     }
@@ -52,7 +75,7 @@ public class GameManager : MonoBehaviour
                     if (ScoreManager.Instance != null)
                     {
                         Debug.Log("Normal score!");
-                        ScoreManager.Instance.AddScore(1);
+                        ScoreManager.Instance.AddScore(1, false); // Normal shot
                     }
                 }
                 _readyForGoal = false;
@@ -75,12 +98,12 @@ public class GameManager : MonoBehaviour
         _touchedRim = true;
     }
 
-    private void AddScore(int points)
+    private void AddScore(int points, bool perfect)
     {
         // Reset the score or perform any necessary allocation logic
         if (ScoreManager.Instance != null)
         {
-            ScoreManager.Instance.AddScore(points);
+            ScoreManager.Instance.AddScore(points, perfect);
         }
     }
 

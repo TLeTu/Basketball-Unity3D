@@ -7,6 +7,7 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance { get; private set; }
     public UnityEvent onScoreChanged;
+    public UnityEvent onPerfectScore;
     public int score { get; private set; }
 
     private void Awake()
@@ -21,10 +22,16 @@ public class ScoreManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void AddScore(int points)
+    public void AddScore(int points, bool perfect = false)
     {
+
         score += points;
         Debug.Log("Score updated: " + score);
         onScoreChanged.Invoke();
+        if (perfect)
+        {
+            onPerfectScore.Invoke();
+            Debug.Log("Perfect score achieved!");
+        }
     }
 }

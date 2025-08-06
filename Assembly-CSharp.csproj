@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Assets/_Scripts/GameManager.cs" />
     <Compile Include="Assets/_Scripts/ScoreManager.cs" />
+    <Compile Include="Assets/_Scripts/AudioController.cs" />
     <Compile Include="Assets/_Scripts/LaunchController.cs" />
     <Compile Include="Assets/_Scripts/RotateRing.cs" />
     <Compile Include="Assets/_Scripts/RimCollider.cs" />
