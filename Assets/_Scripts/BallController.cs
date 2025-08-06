@@ -19,12 +19,12 @@ public class BallController : MonoBehaviour
     private Vector3 _dragEndPos;
     private float _dragStartTime;
     private float _dragEndTime;
-    public float _minSwipeDistance = 50f; // Minimum swipe distance in pixels
-    public float minSwipeSpeed = 1000f;   // Minimum swipe speed in pixels/sec
 
     // Drag movement
     public float dragSpeed = 10f;
 
+    // Swipe sensitivity
+    public float swipeThreshold = 1000f; // Tune this to match your desired swipe sensitivity
     #endregion
 
     #region Unity Methods
@@ -36,24 +36,9 @@ public class BallController : MonoBehaviour
         _launchControl = FindObjectOfType<LaunchController>();
     }
 
-    private void HandlePointerDown(Vector3 pointerPosition)
-    {
-        _rb.useGravity = false;
-        _mousePosition = pointerPosition - GetMousePos();
-        _dragStartPos = pointerPosition;
-        _dragStartTime = Time.time;
-    }
-
     private void OnMouseDown()
     {
         HandlePointerDown(Input.mousePosition);
-    }
-
-
-    private void HandlePointerDrag(Vector3 pointerPosition)
-    {
-        _isDragging = true;
-        _targetPosition = _mainCamera.ScreenToWorldPoint(pointerPosition - _mousePosition);
     }
 
     private void OnMouseDrag()
@@ -61,40 +46,11 @@ public class BallController : MonoBehaviour
         HandlePointerDrag(Input.mousePosition);
     }
 
-
-    private void HandlePointerUp(Vector3 pointerPosition)
-    {
-        _isDragging = false;
-        _rb.useGravity = true;
-        _dragEndPos = pointerPosition;
-        _dragEndTime = Time.time;
-
-        // Calculate swipe vector, duration, and speed
-        Vector3 swipe = _dragEndPos - _dragStartPos;
-        float swipeDuration = _dragEndTime - _dragStartTime;
-        float swipeSpeed = swipe.magnitude / Mathf.Max(swipeDuration, 0.001f); // pixels/sec
-
-        // Launch only if swipe is upward, long enough, and fast enough
-        if (swipe.magnitude > _minSwipeDistance && swipe.y > Mathf.Abs(swipe.x) && swipeSpeed > minSwipeSpeed)
-        {
-            if (_launchControl != null)
-            {
-                // Convert screen space swipe to world space direction
-                Vector3 worldSwipeDirection = _mainCamera.ScreenToWorldPoint(new Vector3(swipe.x, swipe.y, _mainCamera.nearClipPlane));
-                _launchControl.LaunchBall(gameObject, swipe);
-            }
-            else
-            {
-                Debug.LogWarning("LaunchControl not found in the scene.");
-            }
-        }
-        // else: just drop the ball, gravity will take over
-    }
-
     private void OnMouseUp()
     {
         HandlePointerUp(Input.mousePosition);
     }
+
     private void Update()
     {
         // Touch input support
@@ -144,27 +100,69 @@ public class BallController : MonoBehaviour
     }
     #endregion
 
+    #region Input Handling
+    private void HandlePointerDown(Vector3 pointerPosition)
+    {
+        _rb.useGravity = false;
+        _mousePosition = pointerPosition - GetMousePos();
+        _dragStartPos = pointerPosition;
+        _dragStartTime = Time.time;
+    }
+
+    private void HandlePointerDrag(Vector3 pointerPosition)
+    {
+        _isDragging = true;
+        _targetPosition = _mainCamera.ScreenToWorldPoint(pointerPosition - _mousePosition);
+    }
+
+    private void HandlePointerUp(Vector3 pointerPosition)
+    {
+        _isDragging = false;
+        _rb.useGravity = true;
+        _dragEndPos = pointerPosition;
+        _dragEndTime = Time.time;
+
+        // Calculate swipe vector and speed
+        Vector3 swipeVector = _dragEndPos - _dragStartPos;
+        float swipeDuration = _dragEndTime - _dragStartTime;
+        float swipeSpeed = swipeVector.magnitude / swipeDuration;
+
+        Debug.Log($"Swipe Speed: {swipeSpeed}");
+
+        if (swipeSpeed > swipeThreshold)
+        {
+            if (_launchControl != null)
+            {
+                _launchControl.LaunchBall(gameObject, swipeVector.normalized * swipeSpeed);
+            }
+            else
+            {
+                Debug.LogWarning("LaunchControl not found in the scene.");
+            }
+        }
+        else
+        {
+            Debug.Log("Swipe too slow — ball dropped without launch.");
+            // Let the ball drop naturally
+        }
+    }
+    #endregion
+
     #region Helper Methods
-    // Get the mouse position in screen space for the ball
     private Vector3 GetMousePos()
     {
         return _mainCamera.WorldToScreenPoint(transform.position);
     }
 
-    // Change the material of the ball mesh
     public void ChangeBallMaterial(Material newMaterial)
     {
-        // Find the child object named "ballMesh"
         Transform ballMeshTransform = transform.Find("ballMesh");
-        
+
         if (ballMeshTransform != null)
         {
-            // Get the Renderer component from the ballMesh child
             Renderer ballRenderer = ballMeshTransform.GetComponent<Renderer>();
-            
             if (ballRenderer != null)
             {
-                // Apply the new material
                 ballRenderer.material = newMaterial;
             }
             else
@@ -178,12 +176,11 @@ public class BallController : MonoBehaviour
         }
     }
 
-    // Simulate rolling rotation based on velocity
     private void ApplyRollingEffect(Vector3 velocity)
     {
-        if (velocity.sqrMagnitude < 0.001f) return; // Ignore if not moving
+        if (velocity.sqrMagnitude < 0.001f) return;
 
-        float radius = transform.localScale.x * 0.5f; // Assumes uniform scaling (sphere)
+        float radius = transform.localScale.x * 0.5f;
         Vector3 rotationAxis = Vector3.Cross(Vector3.up, velocity.normalized);
         float angularDistance = velocity.magnitude * Time.fixedDeltaTime / radius;
         Quaternion deltaRotation = Quaternion.AngleAxis(Mathf.Rad2Deg * angularDistance, rotationAxis);
