@@ -9,8 +9,28 @@ public class BallCarousel : MonoBehaviour
     public float rotationSpeed = 5f;
     [SerializeField] private GameObject[] balls;
     private GameObject currentBall;
+    private void Start()
+    {
+        if (balls == null || balls.Length == 0)
+        {
+            Debug.LogError("BallCarousel: No balls assigned in the inspector.");
+            return;
+        }
 
-    void Update()
+        // Initialize the carousel with the first ball facing the camera
+        currentBall = GetBallFacingCamera();
+        if (currentBall != null)
+        {
+            Transform arrowChild = currentBall.transform.Find("Arrow");
+            if (arrowChild != null)
+            {
+                // Enable the entire Arrow child GameObject
+                arrowChild.gameObject.SetActive(true);
+            }
+        }
+    }
+
+    private void Update()
     {
         // Mouse input
         if (Input.GetMouseButtonDown(0))
@@ -20,10 +40,31 @@ public class BallCarousel : MonoBehaviour
         }
         if (Input.GetMouseButtonUp(0))
         {
+            // Disable the arrow for the current ball
+            if (currentBall != null)
+            {
+                Transform arrowChild = currentBall.transform.Find("Arrow");
+                if (arrowChild != null)
+                {
+                    Debug.Log("Disabling Arrow for: " + currentBall.GetComponent<BallSelection>().ballName);
+                    // Disable the entire Arrow child GameObject
+                    arrowChild.gameObject.SetActive(false);
+                }
+            }
+            // Get the ball that is currently facing the camera
             isDragging = false;
             currentBall = GetBallFacingCamera();
             if (currentBall != null)
             {
+                // Enable the arrow for the current ball
+                Transform arrowChild = currentBall.transform.Find("Arrow");
+                if (arrowChild != null)
+                {
+                    Debug.Log("Enabling Arrow for: " + currentBall.GetComponent<BallSelection>().ballName);
+                    // Enable the entire Arrow child GameObject
+                    arrowChild.gameObject.SetActive(true);
+                }
+                // Log the name of the current ball
                 Debug.Log("Current Ball: " + currentBall.GetComponent<BallSelection>().ballName);
                 // Do something with the current ball
             }
@@ -60,11 +101,29 @@ public class BallCarousel : MonoBehaviour
                 case TouchPhase.Ended:
                 case TouchPhase.Canceled:
                     isDragging = false;
+                    // Get the ball that is currently facing the camera and disable its sprite child
+                    if (currentBall != null)
+                    {
+                        Transform arrowChild = currentBall.transform.Find("Arrow");
+                        if (arrowChild != null)
+                        {
+                            Debug.Log("Disabling Arrow for: " + currentBall.GetComponent<BallSelection>().ballName);
+                            // Disable the entire Arrow child GameObject
+                            arrowChild.gameObject.SetActive(false);
+                        }
+                    }
                     currentBall = GetBallFacingCamera();
                     if (currentBall != null)
                     {
                         Debug.Log("Current Ball: " + currentBall.GetComponent<BallSelection>().ballName);
-                        // Do something with the current ball
+                        // Get the current ball Arrow child
+                        Transform arrowChild = currentBall.transform.Find("Arrow");
+                        if (arrowChild != null)
+                        {
+                            Debug.Log("Enabling Arrow for: " + currentBall.GetComponent<BallSelection>().ballName);
+                            // Enable the entire Arrow child GameObject
+                            arrowChild.gameObject.SetActive(true);
+                        }
                     }
                     break;
             }

@@ -54,6 +54,7 @@
     <Compile Include="Assets/_Scripts/RimCollider.cs" />
     <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
     <Compile Include="Assets/_Scripts/BallCarousel.cs" />
+    <Compile Include="Assets/_Scripts/SpriteRender.cs" />
     <Compile Include="Assets/_Scripts/BallSelection.cs" />
     <Compile Include="Assets/_Scripts/BackBtn.cs" />
     <Compile Include="Assets/_Scripts/BallSelectionBtn.cs" />

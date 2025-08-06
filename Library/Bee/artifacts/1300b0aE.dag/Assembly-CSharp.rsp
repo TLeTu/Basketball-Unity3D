@@ -375,6 +375,7 @@
 "Assets/_Scripts/RotateRing.cs"
 "Assets/_Scripts/ScoreManager.cs"
 "Assets/_Scripts/ScoreUI.cs"
+"Assets/_Scripts/SpriteRender.cs"
 -langversion:9.0
 /deterministic
 /optimize+
