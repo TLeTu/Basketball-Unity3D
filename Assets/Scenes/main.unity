@@ -3121,6 +3121,7 @@ MonoBehaviour:
   - {fileID: 918643548}
   - {fileID: 331616117}
   - {fileID: 1732337042}
+  perfectParticleSystem: {fileID: 2878013522007032693}
   passSound: {fileID: 8300000, guid: be575f560d9ccc740000000000000056, type: 3}
   backgroundMusic: {fileID: 8300000, guid: 028190560d9ccd32000000000000006d, type: 3}
   perfectSound: {fileID: 8300000, guid: bb435f560d9cc9600000000000000052, type: 3}
@@ -18486,7 +18487,7 @@ ParticleSystem:
   emitterVelocityMode: 0
   looping: 1
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 1
   autoRandomSeed: 1
   startDelay:

@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     private float _perfectTimer = 0f;
     [SerializeField] private float _perfectThreshold = 100f; // seconds
     [SerializeField] private GameObject[] _balls;
+    public ParticleSystem perfectParticleSystem; // Particle system for goal effect
     public AudioClip passSound;
     public AudioClip backgroundMusic; // Added for background music
     public AudioClip perfectSound; // Sound played on perfect score
@@ -60,6 +61,11 @@ public class GameManager : MonoBehaviour
                     if (perfectSound != null && _audioSource != null)
                     {
                         _audioSource.PlayOneShot(perfectSound, 2f); // Play with a higher volume of 1f
+                    }
+                    // Play perfect particle effect if assigned
+                    if (perfectParticleSystem != null)
+                    {
+                        perfectParticleSystem.Play();
                     }
                     // Perfect score!
                     if (ScoreManager.Instance != null)
