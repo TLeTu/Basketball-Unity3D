@@ -50,10 +50,12 @@
     <Compile Include="Assets/_Scripts/GameManager.cs" />
     <Compile Include="Assets/_Scripts/ScoreManager.cs" />
     <Compile Include="Assets/_Scripts/LaunchController.cs" />
+    <Compile Include="Assets/_Scripts/RotateRing.cs" />
     <Compile Include="Assets/_Scripts/RimCollider.cs" />
     <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
     <Compile Include="Assets/_Scripts/BallCarousel.cs" />
     <Compile Include="Assets/_Scripts/BallSelection.cs" />
+    <Compile Include="Assets/_Scripts/BackBtn.cs" />
     <Compile Include="Assets/_Scripts/BallSelectionBtn.cs" />
     <Compile Include="Assets/_Scripts/HoopTrigger.cs" />
     <Compile Include="Assets/_Scripts/ScoreUI.cs" />

@@ -11,7 +11,8 @@ public class BallCarousel : MonoBehaviour
     private GameObject currentBall;
 
     void Update()
-    {   
+    {
+        // Mouse input
         if (Input.GetMouseButtonDown(0))
         {
             isDragging = true;
@@ -36,6 +37,38 @@ public class BallCarousel : MonoBehaviour
             lastMouseX = mouseX;
         }
 
+        // Touch input
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            switch (touch.phase)
+            {
+                case TouchPhase.Began:
+                    isDragging = true;
+                    lastMouseX = touch.position.x;
+                    break;
+                case TouchPhase.Moved:
+                case TouchPhase.Stationary:
+                    if (isDragging)
+                    {
+                        float touchX = touch.position.x;
+                        float deltaX = touchX - lastMouseX;
+                        transform.Rotate(0, -deltaX * rotationSpeed * Time.deltaTime, 0);
+                        lastMouseX = touchX;
+                    }
+                    break;
+                case TouchPhase.Ended:
+                case TouchPhase.Canceled:
+                    isDragging = false;
+                    currentBall = GetBallFacingCamera();
+                    if (currentBall != null)
+                    {
+                        Debug.Log("Current Ball: " + currentBall.GetComponent<BallSelection>().ballName);
+                        // Do something with the current ball
+                    }
+                    break;
+            }
+        }
     }
 
     private GameObject GetBallFacingCamera()

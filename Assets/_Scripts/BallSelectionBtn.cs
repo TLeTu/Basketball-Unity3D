@@ -28,4 +28,17 @@ public class BallSelectionBtn : MonoBehaviour
         _inGameCanvas.SetActive(isActive); // Hide in-game canvas when ball selection is active
         _ballCarousel.SetActive(!isActive);
     }
+    public void OnCloseButtonClicked()
+    {
+        // Hide the ball selection canvas and show the in-game canvas
+        _ballSelectionCanvas.SetActive(false);
+        _inGameCanvas.SetActive(true);
+        _ballCarousel.SetActive(false);
+    }
+    public void OnBallSelected()
+    {
+        _ballSelectionCanvas.SetActive(false);
+        _inGameCanvas.SetActive(true);
+        _ballCarousel.SetActive(false);
+    }
 }

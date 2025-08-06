@@ -35,28 +35,38 @@ public class BallController : MonoBehaviour
         _launchControl = FindObjectOfType<LaunchController>();
     }
 
+
+    private void HandlePointerDown(Vector3 pointerPosition)
+    {
+        _rb.useGravity = false;
+        _mousePosition = pointerPosition - GetMousePos();
+        _dragStartPos = pointerPosition;
+        _dragStartTime = Time.time;
+    }
+
     private void OnMouseDown()
     {
-        // Begin dragging: disable gravity and record start position/time
-        _rb.useGravity = false;
-        _mousePosition = Input.mousePosition - GetMousePos();
-        _dragStartPos = Input.mousePosition;
-        _dragStartTime = Time.time;
+        HandlePointerDown(Input.mousePosition);
+    }
+
+
+    private void HandlePointerDrag(Vector3 pointerPosition)
+    {
+        _isDragging = true;
+        _targetPosition = _mainCamera.ScreenToWorldPoint(pointerPosition - _mousePosition);
     }
 
     private void OnMouseDrag()
     {
-        // Update dragging state and target position
-        _isDragging = true;
-        _targetPosition = _mainCamera.ScreenToWorldPoint(Input.mousePosition - _mousePosition);
+        HandlePointerDrag(Input.mousePosition);
     }
 
-    private void OnMouseUp()
+
+    private void HandlePointerUp(Vector3 pointerPosition)
     {
-        // End dragging: re-enable gravity and record end position/time
         _isDragging = false;
         _rb.useGravity = true;
-        _dragEndPos = Input.mousePosition;
+        _dragEndPos = pointerPosition;
         _dragEndTime = Time.time;
 
         // Calculate swipe vector, duration, and speed
@@ -77,6 +87,33 @@ public class BallController : MonoBehaviour
             }
         }
         // else: just drop the ball, gravity will take over
+    }
+
+    private void OnMouseUp()
+    {
+        HandlePointerUp(Input.mousePosition);
+    }
+    private void Update()
+    {
+        // Touch input support
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            switch (touch.phase)
+            {
+                case TouchPhase.Began:
+                    HandlePointerDown(touch.position);
+                    break;
+                case TouchPhase.Moved:
+                case TouchPhase.Stationary:
+                    HandlePointerDrag(touch.position);
+                    break;
+                case TouchPhase.Ended:
+                case TouchPhase.Canceled:
+                    HandlePointerUp(touch.position);
+                    break;
+            }
+        }
     }
 
     private void FixedUpdate()
