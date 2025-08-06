@@ -149,6 +149,33 @@ public class BallController : MonoBehaviour
         return _mainCamera.WorldToScreenPoint(transform.position);
     }
 
+    // Change the material of the ball mesh
+    public void ChangeBallMaterial(Material newMaterial)
+    {
+        // Find the child object named "ballMesh"
+        Transform ballMeshTransform = transform.Find("ballMesh");
+        
+        if (ballMeshTransform != null)
+        {
+            // Get the Renderer component from the ballMesh child
+            Renderer ballRenderer = ballMeshTransform.GetComponent<Renderer>();
+            
+            if (ballRenderer != null)
+            {
+                // Apply the new material
+                ballRenderer.material = newMaterial;
+            }
+            else
+            {
+                Debug.LogWarning("No Renderer component found on ballMesh child object.");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("ballMesh child object not found. Make sure the child object is named 'ballMesh'.");
+        }
+    }
+
     // Simulate rolling rotation based on velocity
     private void ApplyRollingEffect(Vector3 velocity)
     {

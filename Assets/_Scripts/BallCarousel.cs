@@ -4,11 +4,26 @@ using UnityEngine;
 
 public class BallCarousel : MonoBehaviour
 {
+    public static BallCarousel Instance { get; private set; }
+    
     private bool isDragging = false;
     private float lastMouseX;
     public float rotationSpeed = 5f;
     [SerializeField] private GameObject[] balls;
     private GameObject currentBall;
+    
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+        // Removed DontDestroyOnLoad since this is not a root GameObject
+        // The singleton will work within the current scene
+    }
+    
     private void Start()
     {
         if (balls == null || balls.Length == 0)
@@ -157,5 +172,40 @@ public class BallCarousel : MonoBehaviour
             }
         }
         return facingBall;
+    }
+
+    // Get the material of the current ball from its "mesh" child object
+    public Material GetCurrentBallMaterial()
+    {
+        if (currentBall == null)
+        {
+            Debug.LogWarning("BallCarousel: No current ball selected.");
+            return null;
+        }
+
+        // Find the child object named "mesh"
+        Transform meshTransform = currentBall.transform.Find("mesh");
+        
+        if (meshTransform != null)
+        {
+            // Get the Renderer component from the mesh child
+            Renderer meshRenderer = meshTransform.GetComponent<Renderer>();
+            
+            if (meshRenderer != null)
+            {
+                // Return the material
+                return meshRenderer.material;
+            }
+            else
+            {
+                Debug.LogWarning("BallCarousel: No Renderer component found on mesh child object of " + currentBall.name);
+                return null;
+            }
+        }
+        else
+        {
+            Debug.LogWarning("BallCarousel: mesh child object not found on " + currentBall.name + ". Make sure the child object is named 'mesh'.");
+            return null;
+        }
     }
 }

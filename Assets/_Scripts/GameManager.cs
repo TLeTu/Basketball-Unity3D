@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     private bool _readyForGoal = false;
     private float _perfectTimer = 0f;
     private const float PERFECT_THRESHOLD = 0.2f; // seconds
+    [SerializeField] private GameObject[] _balls;
 
     private void Awake()
     {
@@ -80,6 +81,41 @@ public class GameManager : MonoBehaviour
         if (ScoreManager.Instance != null)
         {
             ScoreManager.Instance.AddScore(points);
+        }
+    }
+
+    // Change the material of all balls in the game
+    public void ChangeAllBallsMaterial(Material newMaterial)
+    {
+        if (_balls == null || _balls.Length == 0)
+        {
+            Debug.LogWarning("GameManager: No balls assigned in the _balls array.");
+            return;
+        }
+
+        if (newMaterial == null)
+        {
+            Debug.LogWarning("GameManager: Material parameter is null.");
+            return;
+        }
+
+        foreach (GameObject ball in _balls)
+        {
+            if (ball == null)
+            {
+                Debug.LogWarning("GameManager: Found null ball in _balls array.");
+                continue;
+            }
+
+            BallController ballController = ball.GetComponent<BallController>();
+            if (ballController != null)
+            {
+                ballController.ChangeBallMaterial(newMaterial);
+            }
+            else
+            {
+                Debug.LogWarning($"GameManager: No BallController component found on {ball.name}.");
+            }
         }
     }
 }

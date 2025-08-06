@@ -37,6 +37,27 @@ public class BallSelectionBtn : MonoBehaviour
     }
     public void OnBallSelected()
     {
+        // Get the current ball's material from the carousel
+        if (BallCarousel.Instance != null)
+        {
+            Material currentBallMaterial = BallCarousel.Instance.GetCurrentBallMaterial();
+            
+            if (currentBallMaterial != null && GameManager.Instance != null)
+            {
+                // Change all balls' material to match the selected ball
+                GameManager.Instance.ChangeAllBallsMaterial(currentBallMaterial);
+                Debug.Log("Changed all balls material to: " + currentBallMaterial.name);
+            }
+            else
+            {
+                Debug.LogWarning("BallSelectionBtn: Could not get current ball material or GameManager instance is null.");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("BallSelectionBtn: BallCarousel instance is null.");
+        }
+        
         _ballSelectionCanvas.SetActive(false);
         _inGameCanvas.SetActive(true);
         _ballCarousel.SetActive(false);
