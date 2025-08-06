@@ -76,6 +76,7 @@ public class GameManager : MonoBehaviour
                     {
                         Debug.Log("Normal score!");
                         ScoreManager.Instance.AddScore(1, false); // Normal shot
+                        _touchedRim = false; // Reset rim touch state
                     }
                 }
                 _readyForGoal = false;
