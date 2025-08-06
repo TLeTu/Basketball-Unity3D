@@ -11,11 +11,11 @@ Available memory:        19691 MB
 Using pre-set license
 Pro License: YES
 
-(Unity:12137): Gtk-CRITICAL **: 17:03:51.103: gtk_window_set_default_icon: assertion 'GDK_IS_PIXBUF (icon)' failed
+(Unity:8851): Gtk-CRITICAL **: 15:41:10.240: gtk_window_set_default_icon: assertion 'GDK_IS_PIXBUF (icon)' failed
 
-(Unity:12137): GLib-GObject-CRITICAL **: 17:03:51.103: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+(Unity:8851): GLib-GObject-CRITICAL **: 15:41:10.240: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
 
-(Unity:12137): Gtk-WARNING **: 17:03:51.125: Theme parsing error: gtk.css:6754:15: Junk at end of value for padding
+(Unity:8851): Gtk-WARNING **: 15:41:10.261: Theme parsing error: gtk.css:6754:15: Junk at end of value for padding
 Desktop is 1920 x 1080 @ 60 Hz
 Initialize udev device monitor.
 
@@ -31,7 +31,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-38119
+36991
 Successfully changed project path to: /home/leetuws/Shared/Projects/Basketball-Unity3D
 /home/leetuws/Shared/Projects/Basketball-Unity3D
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -65,17 +65,17 @@ Successfully changed project path to: /home/leetuws/Shared/Projects/Basketball-U
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [140113246958400]  Target information:
+Player connection [139648446526272]  Target information:
 
-Player connection [140113246958400]  * "[IP] 192.168.1.142 [Port] 0 [Flags] 2 [Guid] 310075634 [EditorId] 310075634 [Version] 1048832 [Id] LinuxEditor(16,192.168.1.144) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+Player connection [139648446526272]  * "[IP] 192.168.1.142 [Port] 0 [Flags] 2 [Guid] 4246937515 [EditorId] 4246937515 [Version] 1048832 [Id] LinuxEditor(16,192.168.1.144) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
 
-Player connection [140113246958400]  * "[IP] 192.168.1.144 [Port] 0 [Flags] 2 [Guid] 310075634 [EditorId] 310075634 [Version] 1048832 [Id] LinuxEditor(16,192.168.1.144) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+Player connection [139648446526272]  * "[IP] 192.168.1.144 [Port] 0 [Flags] 2 [Guid] 4246937515 [EditorId] 4246937515 [Version] 1048832 [Id] LinuxEditor(16,192.168.1.144) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
 
-Player connection [140113246958400] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [140113246958400] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [139648446526272] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [139648446526272] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-Refreshing native plugins compatible for Editor in 109,40 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 89,22 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Initialize engine version: 2022.3.62f1 (4af31df58517)
 [Subsystems] Discovering subsystems at path /home/leetuws/Unity/Hub/Editor/2022.3.62f1/Editor/Data/Resources/UnitySubsystems
@@ -92,54 +92,54 @@ L_ARB_texture_border_clamp GL_ARB_texture_buffer_object GL_ARB_texture_buffer_ob
 _10_10_10_rev GL_ARB_viewport_array GL_ATI_blend_equation_separate GL_ATI_texture_float GL_EXT_EGL_image_storage GL_EXT_EGL_image_storage_compression GL_EXT_EGL_sync GL_EXT_abgr GL_EXT_blend_equation_separate GL_EXT_debug_label GL_EXT_demote_to_helper_invocation GL_EXT_depth_bounds_test GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_memory_object GL_EXT_memory_object_fd GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_polygon_offset_clamp GL_EXT_provoking_vertex GL_EXT_semaphore GL_EXT_semaphore_fd GL_EXT_shader_framebuffer_fetch GL_EXT_shader_framebuffer_fetch_non_coherent GL_EXT_shader_integer_mix GL_EXT_shader_samples_identical GL_EXT_texture_array GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_filter_anisotropic GL_EXT_texture_integer GL_EXT_texture_sRGB GL_EXT
 _texture_sRGB_R8 GL_EXT_texture_sRGB_decode GL_EXT_texture_shadow_lod GL_EXT_texture_shared_exponent GL_EXT_texture_snorm GL_EXT_texture_storage GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_IBM_multimode_draw_arrays GL_INTEL_blackhole_render GL_INTEL_conservative_rasterization GL_INTEL_performance_query GL_INTEL_shader_atomic_float_minmax GL_INTEL_shader_integer_functions2 GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_KHR_context_flush_control GL_KHR_debug GL_KHR_no_error GL_KHR_parallel_shader_compile GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_sliced_3d GL_MESA_framebuffer_flip_y GL_MESA_pack_invert GL_MESA_shader_integer_functions GL_MESA_texture_const_bandwidth GL_MESA_texture_signed_rgba GL_NV_alpha_to_coverage_dither_control GL_NV_compute_shader_derivatives GL_NV_conditional_render GL_NV_copy_image GL_NV_depth_clamp GL_N
 V_fragment_shader_interlock GL_NV_packed_depth_stencil GL_NV_texture_barrier GL_OES_EGL_image GL_S3_s3tc
-OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle 1670968384
+OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle -1924933408
 Initialize mono
 Mono path[0] = '/home/leetuws/Unity/Hub/Editor/2022.3.62f1/Editor/Data/Managed'
 Mono path[1] = '/home/leetuws/Unity/Hub/Editor/2022.3.62f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-linux'
 Mono config path = '/home/leetuws/Unity/Hub/Editor/2022.3.62f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56137
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56851
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /home/leetuws/Unity/Hub/Editor/2022.3.62f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /home/leetuws/Unity/Hub/Editor/2022.3.62f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: /home/leetuws/Unity/Hub/Editor/2022.3.62f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0,030684 seconds.
-- Loaded All Assemblies, in  0,925 seconds
+Registered in 0,021509 seconds.
+- Loaded All Assemblies, in  0,667 seconds
 Native extension for LinuxStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 396 ms
+Android Extension - Scanning For ADB Devices 337 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1,238 seconds
-Domain Reload Profiling: 2164ms
-	BeginReloadAssembly (175ms)
+- Finished resetting the current domain, in  1,079 seconds
+Domain Reload Profiling: 1748ms
+	BeginReloadAssembly (119ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (123ms)
-	RebuildNativeTypeToScriptingClass (28ms)
-	initialDomainReloadingComplete (184ms)
-	LoadAllAssembliesAndSetupDomain (414ms)
-		LoadAssemblies (174ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (70ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (134ms)
+	LoadAllAssembliesAndSetupDomain (327ms)
+		LoadAssemblies (118ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (410ms)
-			TypeCache.Refresh (407ms)
-				TypeCache.ScanAssembly (367ms)
+		AnalyzeDomain (323ms)
+			TypeCache.Refresh (320ms)
+				TypeCache.ScanAssembly (289ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (1239ms)
+	FinalizeReload (1080ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1089ms)
+		SetupLoadedEditorAssemblies (964ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (610ms)
-			SetLoadedEditorAssemblies (15ms)
+			InitializePlatformSupportModulesInManaged (527ms)
+			SetLoadedEditorAssemblies (10ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (7ms)
-			ProcessInitializeOnLoadAttributes (333ms)
-			ProcessInitializeOnLoadMethodAttributes (124ms)
+			BeforeProcessingInitializeOnLoad (6ms)
+			ProcessInitializeOnLoadAttributes (304ms)
+			ProcessInitializeOnLoadMethodAttributes (116ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -148,7 +148,7 @@ Domain Reload Profiling: 2164ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1,565 seconds
+- Loaded All Assemblies, in  1,391 seconds
 Native extension for LinuxStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
@@ -160,47 +160,47 @@ Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1,430 seconds
-Domain Reload Profiling: 2959ms
-	BeginReloadAssembly (279ms)
+- Finished resetting the current domain, in  1,274 seconds
+Domain Reload Profiling: 2633ms
+	BeginReloadAssembly (247ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (13ms)
+		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (45ms)
-	RebuildCommonClasses (79ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (140ms)
-	LoadAllAssembliesAndSetupDomain (1013ms)
-		LoadAssemblies (834ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (68ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (105ms)
+	LoadAllAssembliesAndSetupDomain (923ms)
+		LoadAssemblies (744ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (308ms)
-			TypeCache.Refresh (266ms)
-				TypeCache.ScanAssembly (233ms)
-			ScanForSourceGeneratedMonoScriptInfo (32ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (1432ms)
+		AnalyzeDomain (300ms)
+			TypeCache.Refresh (255ms)
+				TypeCache.ScanAssembly (223ms)
+			ScanForSourceGeneratedMonoScriptInfo (34ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1275ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1046ms)
+		SetupLoadedEditorAssemblies (916ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (36ms)
+			InitializePlatformSupportModulesInManaged (37ms)
 			SetLoadedEditorAssemblies (8ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (215ms)
-			ProcessInitializeOnLoadAttributes (711ms)
-			ProcessInitializeOnLoadMethodAttributes (64ms)
-			AfterProcessingInitializeOnLoad (12ms)
+			BeforeProcessingInitializeOnLoad (187ms)
+			ProcessInitializeOnLoadAttributes (631ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
+			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
 Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
-Refreshing native plugins compatible for Editor in 57.11 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 57.05 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3271 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (44.9 KB). Loaded Objects now: 3746.
-Memory consumption went from 120.9 MB to 120.8 MB.
-Total: 7.251302 ms (FindLiveObjects: 0.328986 ms CreateObjectMapping: 0.176259 ms MarkObjects: 6.541603 ms  DeleteObjects: 0.201940 ms)
+Unloading 3272 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (45.0 KB). Loaded Objects now: 3747.
+Memory consumption went from 121.0 MB to 121.0 MB.
+Total: 11.072815 ms (FindLiveObjects: 0.439867 ms CreateObjectMapping: 0.381054 ms MarkObjects: 9.944443 ms  DeleteObjects: 0.304252 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -214,60 +214,41 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 8734369c593a96b6aa43fe14814a3dd9 -> 907bf2130562a0aebdb7c35e5037b9ee
-  custom:scripting/monoscript/fileName/BallCarousel.cs:  -> 0f47fe605128d115f08cea69b32d127e
+========================================================================
+Received Import Request.
+  Time since last request: 3034.690574 seconds.
+  path: Assets/_Scripts/BallController.cs
+  artifactKey: Guid(3ab0de2610b58007c88e7759bd41d330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Scripts/BallController.cs using Guid(3ab0de2610b58007c88e7759bd41d330) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'dc7755144fc1117a7df936a6178018fa') in 0.007117 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.230142 seconds.
+  path: Assets/_Scripts/BallSelection.cs
+  artifactKey: Guid(03e499dc5e97b5ca699e4c7b14a900f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Scripts/BallSelection.cs using Guid(03e499dc5e97b5ca699e4c7b14a900f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0f383652111629158081ef61994877e6') in 0.001465 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.506632 seconds.
+  path: Assets/_Scripts/BallCarousel.cs
+  artifactKey: Guid(8bf52e21ab561ad46bba89ef2ea3c71d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Scripts/BallCarousel.cs using Guid(8bf52e21ab561ad46bba89ef2ea3c71d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '48435799427fe3ddb2e71e33029d196f') in 0.001312 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.243 seconds
-Native extension for LinuxStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  3.423 seconds
-Domain Reload Profiling: 4636ms
-	BeginReloadAssembly (274ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (69ms)
-	RebuildCommonClasses (71ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (77ms)
-	LoadAllAssembliesAndSetupDomain (775ms)
-		LoadAssemblies (858ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (26ms)
-			TypeCache.Refresh (14ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (3425ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1018ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (49ms)
-			SetLoadedEditorAssemblies (10ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (233ms)
-			ProcessInitializeOnLoadAttributes (668ms)
-			ProcessInitializeOnLoadMethodAttributes (49ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Refreshing native plugins compatible for Editor in 67.40 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 42.62 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3252 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 13 unused Assets / (27.9 KB). Loaded Objects now: 3749.
-Memory consumption went from 117.2 MB to 117.1 MB.
-Total: 7.898138 ms (FindLiveObjects: 0.455579 ms CreateObjectMapping: 0.486341 ms MarkObjects: 6.887540 ms  DeleteObjects: 0.065515 ms)
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (0.9 KB). Loaded Objects now: 3747.
+Memory consumption went from 65.8 MB to 65.8 MB.
+Total: 8.171364 ms (FindLiveObjects: 0.385045 ms CreateObjectMapping: 0.290470 ms MarkObjects: 7.454828 ms  DeleteObjects: 0.038315 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -283,105 +264,641 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 46.15 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.0 KB). Loaded Objects now: 3747.
+Memory consumption went from 66.0 MB to 66.0 MB.
+Total: 5.930082 ms (FindLiveObjects: 0.403742 ms CreateObjectMapping: 0.213242 ms MarkObjects: 5.282238 ms  DeleteObjects: 0.028646 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 232f87dd983dbecb2a4e21e08eb2cef8 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.230 seconds
+Native extension for LinuxStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  3.385 seconds
+Domain Reload Profiling: 4592ms
+	BeginReloadAssembly (257ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (68ms)
+	RebuildCommonClasses (67ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (62ms)
+	LoadAllAssembliesAndSetupDomain (805ms)
+		LoadAssemblies (721ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (177ms)
+			TypeCache.Refresh (142ms)
+				TypeCache.ScanAssembly (121ms)
+			ScanForSourceGeneratedMonoScriptInfo (26ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (3387ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (933ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (41ms)
+			SetLoadedEditorAssemblies (10ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (227ms)
+			ProcessInitializeOnLoadAttributes (594ms)
+			ProcessInitializeOnLoadMethodAttributes (53ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 48.47 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3253 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 13 unused Assets / (27.9 KB). Loaded Objects now: 3750.
+Memory consumption went from 117.1 MB to 117.1 MB.
+Total: 7.458513 ms (FindLiveObjects: 0.386924 ms CreateObjectMapping: 0.180826 ms MarkObjects: 6.786524 ms  DeleteObjects: 0.100037 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/AndroidNotificationPostProcessor.cs: 478c14339ae955eabae36abbb68f2f4b -> 
+  custom:CustomObjectIndexerAttribute: 232f87dd983dbecb2a4e21e08eb2cef8 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/precompiled-assembly-types:Unity.Notifications: 69c07b130abcbdb582a47f5502d252be -> fd9ee5d14ae1dd7349bce635ab66535f
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:UnityEngine.UI: 0ca91b724954396096148e7d156ea91e -> 832038b02ecfcba1d89b947864fa1d96
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
 Received Import Request.
-  Time since last request: 8697.332335 seconds.
-  path: Assets/VisualAssets/Basketball/Assets/Images/texture9.png
-  artifactKey: Guid(614351fb42c5f18700000000000000b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VisualAssets/Basketball/Assets/Images/texture9.png using Guid(614351fb42c5f18700000000000000b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+  Time since last request: 853.011292 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Materials/0.mat
+  artifactKey: Guid(4d6696293f21bfc200000000000000f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Materials/0.mat using Guid(4d6696293f21bfc200000000000000f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '48f32f0622c8b25a8d8e8bec16c9f740') in 0.196445 seconds
+ -> (artifact id: '3bfe2230ef2a4f689098760df871a099') in 0.668775 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Materials/shadowBalSelect.mat
+  artifactKey: Guid(60008afb42c4b25c00000000000000fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Materials/shadowBalSelect.mat using Guid(60008afb42c4b25c00000000000000fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6dcd34c292a48a39048db44029fb42fc') in 0.421401 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Materials/texture8.mat
+  artifactKey: Guid(6e7a45fb42cac89300000000000000ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Materials/texture8.mat using Guid(6e7a45fb42cac89300000000000000ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2d63dada4b594e9a10297a62efba633d') in 0.067441 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Materials/light2.mat
+  artifactKey: Guid(6f3c8afb42cb8e5c00000000000000e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Materials/light2.mat using Guid(6f3c8afb42cb8e5c00000000000000e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '31f509dc1f6e9927588ab594c53b54fe') in 0.070688 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Materials/fire.mat
+  artifactKey: Guid(600200fb42c4b0d600000000000000d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Materials/fire.mat using Guid(600200fb42c4b0d600000000000000d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0a1bac9945f500760150badd05c45068') in 0.018601 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Materials/light3.mat
+  artifactKey: Guid(6e798afb42cacb5c00000000000000e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Materials/light3.mat using Guid(6e798afb42cacb5c00000000000000e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '49741256bb9db57aab1718e01a529810') in 0.020739 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Materials/starParticle3_d1.mat
+  artifactKey: Guid(411778ad17e4cd3a000000000000000c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Materials/starParticle3_d1.mat using Guid(411778ad17e4cd3a000000000000000c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7ba23caa17cad78b7ca4c03e5c3e53ac') in 0.020961 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
   Time since last request: 0.000045 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Materials/starParticle3.mat
+  artifactKey: Guid(63cd00fb42c77fd600000000000000d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Materials/starParticle3.mat using Guid(63cd00fb42c77fd600000000000000d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0f4c036e44235163fd2ed8e0d19b51df') in 0.020910 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Materials/skateboardShadow.mat
+  artifactKey: Guid(63cc45fb42c77e9300000000000000eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Materials/skateboardShadow.mat using Guid(63cc45fb42c77e9300000000000000eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5a94c5e70d20fd79759ff4c8a6d29348') in 0.554797 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Materials/ball.mat
+  artifactKey: Guid(4ea996293ceebfc200000000000000f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Materials/ball.mat using Guid(4ea996293ceebfc200000000000000f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '545da686a40732dcae8721f48c32a393') in 0.025521 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Materials/light5.mat
+  artifactKey: Guid(645245fb42c0e09300000000000000e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Materials/light5.mat using Guid(645245fb42c0e09300000000000000e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '642e6dfb87323d8d9d8eb9ca5f59ee65') in 0.025034 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5.950028 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/0.png
+  artifactKey: Guid(13b784560d9cc1c40000000000000086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/0.png using Guid(13b784560d9cc1c40000000000000086) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7ab1f08eeb6e87b5cac6eee1b69e9c63') in 0.060771 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/aboutBtn.png
+  artifactKey: Guid(76bfc1560d9ccfbc0000000000000099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/aboutBtn.png using Guid(76bfc1560d9ccfbc0000000000000099) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b46e3f1a8c39b7596cf8d65cc5fc619e') in 0.048111 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/light6.png
+  artifactKey: Guid(6e7f51fb42cacd8700000000000000b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/light6.png using Guid(6e7f51fb42cacd8700000000000000b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0a15890513009a11cb3fafcad3e1dba2') in 0.021525 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/10.png
+  artifactKey: Guid(7121c1560d9cc8220000000000000097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/10.png using Guid(7121c1560d9cc8220000000000000097) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6f52fb8dc216f6800a7b75e8c8da2585') in 0.021658 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/light2.png
+  artifactKey: Guid(600651fb42c4b48700000000000000b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/light2.png using Guid(600651fb42c4b48700000000000000b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '529cf896b15293e600f24690ca987a21') in 0.019275 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/progressBar.png
+  artifactKey: Guid(78c6c1560d9cc1c5000000000000009c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/progressBar.png using Guid(78c6c1560d9cc1c5000000000000009c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6fa4a7f8e2435ff15c979891e0220866') in 0.024634 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/4.png
+  artifactKey: Guid(6795e7fb42c3273100000000000000a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/4.png using Guid(6795e7fb42c3273100000000000000a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '91242d190b33f601b2a1b339504a79a1') in 0.024363 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/helpHand.png
+  artifactKey: Guid(6141dbfb42c5f30d00000000000000dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/helpHand.png using Guid(6141dbfb42c5f30d00000000000000dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c06509a1367cfb43b23d66c24ec4b089') in 0.024264 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/progressBarBack.png
+  artifactKey: Guid(1dce84560d9ccfbd0000000000000083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/progressBarBack.png using Guid(1dce84560d9ccfbd0000000000000083) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e2a36399b668274f85aa9533ae64936c') in 0.023665 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/14.png
+  artifactKey: Guid(6e7c9efb42cace4800000000000000cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/14.png using Guid(6e7c9efb42cace4800000000000000cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a2bab5aab12702ddbc1f978db33261ff') in 0.020001 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/scoreAreaShadows.png
+  artifactKey: Guid(6794a2fb42c3267400000000000000ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/scoreAreaShadows.png using Guid(6794a2fb42c3267400000000000000ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b15465f59f98101b26d6d6d266264f71') in 0.026016 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/helpBtn.png
+  artifactKey: Guid(6e73a2fb42cac1740000000000000093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/helpBtn.png using Guid(6e73a2fb42cac1740000000000000093) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'df07245e9a9e9c5de281a696c2de1788') in 0.029423 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/kbBackspace.png
+  artifactKey: Guid(12f284560d9cc0810000000000000087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/kbBackspace.png using Guid(12f284560d9cc0810000000000000087) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0871626742530b6736b16f0f27b2a664') in 0.025191 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/helpArrow.png
+  artifactKey: Guid(6f37e7fb42cb853100000000000000a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/helpArrow.png using Guid(6f37e7fb42cb853100000000000000a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '52ea415c2e072d540cbe06f399231623') in 0.024533 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/12.png
+  artifactKey: Guid(600714fb42c4b5c200000000000000ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/12.png using Guid(600714fb42c4b5c200000000000000ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '47bdef3d11ddb98ca0d864f352a43f16') in 0.023957 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/checkbox-checked.png
+  artifactKey: Guid(628edbfb42c63c0d00000000000000de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/checkbox-checked.png using Guid(628edbfb42c63c0d00000000000000de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'acf802288989d67825799fa31ec99498') in 0.029471 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/8.png
+  artifactKey: Guid(600be7fb42c4b93100000000000000a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/8.png using Guid(600be7fb42c4b93100000000000000a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd3234ce99ef9c98d870a8266ef342a71') in 0.022665 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/3.png
+  artifactKey: Guid(1f4484560d9ccd370000000000000085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/3.png using Guid(1f4484560d9ccd370000000000000085) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2f9fb61a98fbb9d21ca97e20c6e21559') in 0.021116 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/pauseBtn.png
+  artifactKey: Guid(6281e7fb42c6333100000000000000a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/pauseBtn.png using Guid(6281e7fb42c6333100000000000000a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '54c49f3e20781f2be4696d9083a14c93') in 0.029021 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/13.png
+  artifactKey: Guid(66de9efb42c26c4800000000000000c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/13.png using Guid(66de9efb42c26c4800000000000000c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'de806b7aaee11fd2d1789d94e2b8f9b1') in 0.022420 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/closeBtn.png
+  artifactKey: Guid(66dfdbfb42c26d0d00000000000000db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/closeBtn.png using Guid(66dfdbfb42c26d0d00000000000000db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c036021cae11091947446804f42c764c') in 0.031582 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/2.png
+  artifactKey: Guid(7064c1560d9cc9670000000000000096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/2.png using Guid(7064c1560d9cc9670000000000000096) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f777f4ba17da9271ed9b62f72cfa0c68') in 0.022869 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/medalGold.png
+  artifactKey: Guid(6f36a2fb42cb84740000000000000092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/medalGold.png using Guid(6f36a2fb42cb84740000000000000092) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9f3b013b19379c1f0b70059eedadfd03') in 0.025761 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/light3.png
+  artifactKey: Guid(63c814fb42c77ac200000000000000bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/light3.png using Guid(63c814fb42c77ac200000000000000bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'fa6a82c4d7558a0e46f40dff61665bb0') in 0.022161 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/medalBronze.png
+  artifactKey: Guid(651314fb42c1a1c200000000000000b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/medalBronze.png using Guid(651314fb42c1a1c200000000000000b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd8f142da3172619ba14fa42e8829f39a') in 0.026034 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/metalNet4.png
+  artifactKey: Guid(6004dbfb42c4b60d00000000000000dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/metalNet4.png using Guid(6004dbfb42c4b60d00000000000000dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5bd3151f6ab6e303c64f325fb29a5018') in 0.031551 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/basketballBall.png
+  artifactKey: Guid(7570c1560d9ccc73000000000000009a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/basketballBall.png using Guid(7570c1560d9ccc73000000000000009a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b5f6eb386b45a9a8d924b5fa39bdaf65') in 0.028551 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/arrow2.png
+  artifactKey: Guid(651fe7fb42c1ad3100000000000000a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/arrow2.png using Guid(651fe7fb42c1ad3100000000000000a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7b4090c55f6a4b1643d7b90ed16d2fb0') in 0.024033 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/box.png
+  artifactKey: Guid(66dd51fb42c26f8700000000000000cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/box.png using Guid(66dd51fb42c26f8700000000000000cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2aa827ab48d494769d32c9f8677f9284') in 0.023655 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/highScoresBadge.png
+  artifactKey: Guid(63c951fb42c77b8700000000000000b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/highScoresBadge.png using Guid(63c951fb42c77b8700000000000000b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a1a5e01f0f7f37f9903154e31f581c52') in 0.026726 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/defaultPrticleAddictive.png
+  artifactKey: Guid(41126cad17e4cbfa0000000000000008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/defaultPrticleAddictive.png using Guid(41126cad17e4cbfa0000000000000008) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9e50da37180c4117a93338fc71c8f558') in 0.022519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 208.109696 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/scoreBg.png
+  artifactKey: Guid(a7c34b560d9cc820000000000000008b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/scoreBg.png using Guid(a7c34b560d9cc820000000000000008b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5ebf075d5cb4fdc4e80c585e42ca0fd0') in 0.022124 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/starParticle3_d1.png
+  artifactKey: Guid(411e9fad17e4c26a0000000000000007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/starParticle3_d1.png using Guid(411e9fad17e4c26a0000000000000007) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7cacc2e6f6b19f2280f180fb4948db05') in 0.018594 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/sliderThumb.png
+  artifactKey: Guid(1a5084560d9cc8230000000000000081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/sliderThumb.png using Guid(1a5084560d9cc8230000000000000081) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8a54120757c116758268a98aba77cc4c') in 0.023921 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
   path: Assets/VisualAssets/Basketball/Assets/Images/texture11.png
   artifactKey: Guid(65119efb42c1a34800000000000000c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/VisualAssets/Basketball/Assets/Images/texture11.png using Guid(65119efb42c1a34800000000000000c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '921e4a3cfe7251699976a5e5315c7ec1') in 0.027444 seconds
+ -> (artifact id: '19aa1a6800026cc6635a3b251c6a8992') in 0.020337 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.138 seconds
-Native extension for LinuxStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  3.441 seconds
-Domain Reload Profiling: 4553ms
-	BeginReloadAssembly (228ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (54ms)
-	RebuildCommonClasses (68ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (68ms)
-	LoadAllAssembliesAndSetupDomain (731ms)
-		LoadAssemblies (764ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (59ms)
-			TypeCache.Refresh (18ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (24ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (3442ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (962ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (39ms)
-			SetLoadedEditorAssemblies (11ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (228ms)
-			ProcessInitializeOnLoadAttributes (628ms)
-			ProcessInitializeOnLoadMethodAttributes (48ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 51.16 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3251 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 13 unused Assets / (27.9 KB). Loaded Objects now: 3756.
-Memory consumption went from 117.0 MB to 116.9 MB.
-Total: 8.044626 ms (FindLiveObjects: 0.519687 ms CreateObjectMapping: 0.269067 ms MarkObjects: 7.186590 ms  DeleteObjects: 0.065251 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 232f87dd983dbecb2a4e21e08eb2cef8 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/starParticle3.png
+  artifactKey: Guid(63ca9efb42c7784800000000000000c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/starParticle3.png using Guid(63ca9efb42c7784800000000000000c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e6b839e452e8d62e7b0c7d5f6a143c27') in 0.022631 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 4975.292682 seconds.
-  path: Assets/VisualAssets/Basketball/Assets/Images
-  artifactKey: Guid(9fbd1b993b4a64c799289f3d6c48bbd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VisualAssets/Basketball/Assets/Images using Guid(9fbd1b993b4a64c799289f3d6c48bbd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '34821b6561015f78f27df5ea803f7e90') in 0.003634 seconds
+  Time since last request: 0.000067 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/texture8.png
+  artifactKey: Guid(63c5a2fb42c777740000000000000091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/texture8.png using Guid(63c5a2fb42c777740000000000000091) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '013b80e6371b411e392bc3147d6689f5') in 0.022804 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/skateboard2.png
+  artifactKey: Guid(6f3a51fb42cb888700000000000000b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/skateboard2.png using Guid(6f3a51fb42cb888700000000000000b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6214e3bc513aadc6b861c67b1599a46f') in 0.023754 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/texture10.png
+  artifactKey: Guid(600aa2fb42c4b87400000000000000ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/texture10.png using Guid(600aa2fb42c4b87400000000000000ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b30b9741b74ed947b2686f95b69b3953') in 0.024110 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/shadow.png
+  artifactKey: Guid(651ea2fb42c1ac7400000000000000aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/shadow.png using Guid(651ea2fb42c1ac7400000000000000aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6c08c7a5d83d5e6a605ef1adb43d8aa4') in 0.021978 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Images/texture9.png
+  artifactKey: Guid(614351fb42c5f18700000000000000b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Images/texture9.png using Guid(614351fb42c5f18700000000000000b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9fd1c9a180acdfe09abb297d89e5e125') in 0.025617 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 739.391467 seconds.
+  path: Assets/VisualAssets/Basketball/Assets/Font/Roboto-Medium.ttf
+  artifactKey: Guid(d0321a560d9cc961000000000000005c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VisualAssets/Basketball/Assets/Font/Roboto-Medium.ttf using Guid(d0321a560d9cc961000000000000005c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'dae56c1b1d02e2dd74bec6f998c3802a') in 0.036916 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 1015.787801 seconds.
+  path: Assets/_Scripts/BallSelectionBtn.cs
+  artifactKey: Guid(88522de39e97ff838abf602f297e0974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Scripts/BallSelectionBtn.cs using Guid(88522de39e97ff838abf602f297e0974) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ae01ff3b8337ea9613c6b67b191923e6') in 0.007188 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Prepare
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.116 seconds
+- Loaded All Assemblies, in  1.139 seconds
 Native extension for LinuxStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
@@ -389,57 +906,222 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  3.232 seconds
-Domain Reload Profiling: 4317ms
-	BeginReloadAssembly (224ms)
+- Finished resetting the current domain, in  2.978 seconds
+Domain Reload Profiling: 4089ms
+	BeginReloadAssembly (232ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
+		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (50ms)
-	RebuildCommonClasses (66ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (71ms)
-	LoadAllAssembliesAndSetupDomain (704ms)
-		LoadAssemblies (737ms)
+		CreateAndSetChildDomain (55ms)
+	RebuildCommonClasses (73ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (75ms)
+	LoadAllAssembliesAndSetupDomain (713ms)
+		LoadAssemblies (764ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (48ms)
-			TypeCache.Refresh (17ms)
+		AnalyzeDomain (43ms)
+			TypeCache.Refresh (16ms)
 				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (18ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (3235ms)
+			ScanForSourceGeneratedMonoScriptInfo (16ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (2979ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1019ms)
+		SetupLoadedEditorAssemblies (807ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (33ms)
+			InitializePlatformSupportModulesInManaged (36ms)
 			SetLoadedEditorAssemblies (9ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (273ms)
-			ProcessInitializeOnLoadAttributes (644ms)
-			ProcessInitializeOnLoadMethodAttributes (51ms)
-			AfterProcessingInitializeOnLoad (9ms)
+			BeforeProcessingInitializeOnLoad (201ms)
+			ProcessInitializeOnLoadAttributes (510ms)
+			ProcessInitializeOnLoadMethodAttributes (42ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 60.45 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 45.74 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3251 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 13 unused Assets / (27.9 KB). Loaded Objects now: 3759.
-Memory consumption went from 117.0 MB to 116.9 MB.
-Total: 6.863355 ms (FindLiveObjects: 0.351138 ms CreateObjectMapping: 0.162979 ms MarkObjects: 6.287262 ms  DeleteObjects: 0.059439 ms)
+Unloading 3253 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 13 unused Assets / (28.1 KB). Loaded Objects now: 3823.
+Memory consumption went from 119.5 MB to 119.4 MB.
+Total: 6.751112 ms (FindLiveObjects: 0.347109 ms CreateObjectMapping: 0.164973 ms MarkObjects: 6.172713 ms  DeleteObjects: 0.063887 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/AndroidNotificationPostProcessor.cs: 478c14339ae955eabae36abbb68f2f4b -> 
   custom:CustomObjectIndexerAttribute: 232f87dd983dbecb2a4e21e08eb2cef8 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/precompiled-assembly-types:Unity.Notifications: 69c07b130abcbdb582a47f5502d252be -> fd9ee5d14ae1dd7349bce635ab66535f
+  custom:scripting/monoscript/fileName/BallSelectionBtn.cs: 3177fcab2aad9b03b857b7514615be59 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:UnityEngine.UI: 0ca91b724954396096148e7d156ea91e -> 832038b02ecfcba1d89b947864fa1d96
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: e8e2763afec6f39074748c8d257625e9 -> fc2c3808bc9e4b3e921d60de62289afa
+========================================================================
+Received Import Request.
+  Time since last request: 297.880261 seconds.
+  path: Assets/_Scripts/BallSelectionBtn.cs
+  artifactKey: Guid(88522de39e97ff838abf602f297e0974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Scripts/BallSelectionBtn.cs using Guid(88522de39e97ff838abf602f297e0974) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '92deefdc590a3416d6d4257282497cb5') in 0.004242 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 19.325799 seconds.
+  path: Assets/_Scripts/GameManager.cs
+  artifactKey: Guid(d94e4ef1c45a8786b847a1695060dbb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Scripts/GameManager.cs using Guid(d94e4ef1c45a8786b847a1695060dbb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '23c6f7002994a5fb87f149c072701463') in 0.001049 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.155 seconds
+Native extension for LinuxStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  3.311 seconds
+Domain Reload Profiling: 4438ms
+	BeginReloadAssembly (234ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (55ms)
+	RebuildCommonClasses (70ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (76ms)
+	LoadAllAssembliesAndSetupDomain (729ms)
+		LoadAssemblies (775ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (43ms)
+			TypeCache.Refresh (16ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (16ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (3313ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (853ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (36ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (194ms)
+			ProcessInitializeOnLoadAttributes (561ms)
+			ProcessInitializeOnLoadMethodAttributes (44ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 54.87 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3253 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 13 unused Assets / (28.0 KB). Loaded Objects now: 3826.
+Memory consumption went from 119.5 MB to 119.4 MB.
+Total: 7.153509 ms (FindLiveObjects: 0.436666 ms CreateObjectMapping: 0.188066 ms MarkObjects: 6.460856 ms  DeleteObjects: 0.065294 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/AndroidNotificationPostProcessor.cs: 478c14339ae955eabae36abbb68f2f4b -> 
+  custom:CustomObjectIndexerAttribute: 232f87dd983dbecb2a4e21e08eb2cef8 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/precompiled-assembly-types:Unity.Notifications: 69c07b130abcbdb582a47f5502d252be -> fd9ee5d14ae1dd7349bce635ab66535f
+  custom:scripting/monoscript/fileName/BallSelectionBtn.cs: 3177fcab2aad9b03b857b7514615be59 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:UnityEngine.UI: 0ca91b724954396096148e7d156ea91e -> 832038b02ecfcba1d89b947864fa1d96
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: e8e2763afec6f39074748c8d257625e9 -> fc2c3808bc9e4b3e921d60de62289afa
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.608 seconds
+Native extension for LinuxStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  3.779 seconds
+Domain Reload Profiling: 6364ms
+	BeginReloadAssembly (276ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (64ms)
+	RebuildCommonClasses (71ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (79ms)
+	LoadAllAssembliesAndSetupDomain (2137ms)
+		LoadAssemblies (2205ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (48ms)
+			TypeCache.Refresh (19ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (18ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (3780ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (946ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (42ms)
+			SetLoadedEditorAssemblies (12ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (260ms)
+			ProcessInitializeOnLoadAttributes (576ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 61.66 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3254 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 13 unused Assets / (28.0 KB). Loaded Objects now: 3829.
+Memory consumption went from 119.7 MB to 119.7 MB.
+Total: 9.525057 ms (FindLiveObjects: 0.427131 ms CreateObjectMapping: 0.369432 ms MarkObjects: 8.639445 ms  DeleteObjects: 0.086548 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/AndroidNotificationPostProcessor.cs: 478c14339ae955eabae36abbb68f2f4b -> 
+  custom:CustomObjectIndexerAttribute: 232f87dd983dbecb2a4e21e08eb2cef8 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/precompiled-assembly-types:Unity.Notifications: 69c07b130abcbdb582a47f5502d252be -> fd9ee5d14ae1dd7349bce635ab66535f
+  custom:scripting/monoscript/fileName/BallSelectionBtn.cs: 3177fcab2aad9b03b857b7514615be59 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:UnityEngine.UI: 0ca91b724954396096148e7d156ea91e -> 832038b02ecfcba1d89b947864fa1d96
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: e8e2763afec6f39074748c8d257625e9 -> fc2c3808bc9e4b3e921d60de62289afa

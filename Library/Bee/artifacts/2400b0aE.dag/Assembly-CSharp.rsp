@@ -360,6 +360,7 @@
 "Assets/TutorialInfo/Scripts/Readme.cs"
 "Assets/_Scripts/BallCarousel.cs"
 "Assets/_Scripts/BallController.cs"
+"Assets/_Scripts/BallSelection.cs"
 "Assets/_Scripts/GameManager.cs"
 "Assets/_Scripts/HoopTrigger.cs"
 "Assets/_Scripts/LaunchController.cs"

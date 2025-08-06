@@ -7,9 +7,11 @@ public class BallCarousel : MonoBehaviour
     private bool isDragging = false;
     private float lastMouseX;
     public float rotationSpeed = 5f;
+    [SerializeField] private GameObject[] balls;
+    private GameObject currentBall;
 
     void Update()
-    {
+    {   
         if (Input.GetMouseButtonDown(0))
         {
             isDragging = true;
@@ -18,6 +20,12 @@ public class BallCarousel : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             isDragging = false;
+            currentBall = GetBallFacingCamera();
+            if (currentBall != null)
+            {
+                Debug.Log("Current Ball: " + currentBall.GetComponent<BallSelection>().ballName);
+                // Do something with the current ball
+            }
         }
         if (isDragging)
         {
@@ -27,5 +35,35 @@ public class BallCarousel : MonoBehaviour
             transform.Rotate(0, -deltaX * rotationSpeed * Time.deltaTime, 0);
             lastMouseX = mouseX;
         }
+
+    }
+
+    private GameObject GetBallFacingCamera()
+    {
+        Camera cam = Camera.main;
+        if (cam == null || balls == null || balls.Length == 0) return null;
+
+        Vector3 carouselPosition = transform.position;
+        Vector3 cameraForward = cam.transform.forward;
+        cameraForward.y = 0; // Project onto XZ plane
+        cameraForward.Normalize();
+
+        // float maxDot = float.NegativeInfinity;
+        float minDot = float.PositiveInfinity;
+        GameObject facingBall = null;
+
+        foreach (GameObject ball in balls)
+        {
+            if (ball == null) continue;
+            Vector3 toBall = (ball.transform.position - carouselPosition).normalized;
+            toBall.y = 0; // Project onto XZ plane
+            float dot = Vector3.Dot(cameraForward, toBall);
+            if (dot < minDot)
+            {
+                minDot = dot;
+                facingBall = ball;
+            }
+        }
+        return facingBall;
     }
 }
