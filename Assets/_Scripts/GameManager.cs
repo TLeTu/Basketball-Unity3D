@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     private bool _touchedRim = false;
     private bool _readyForGoal = false;
     private float _perfectTimer = 0f;
-    [SerializeField] private const float PERFECT_THRESHOLD = 100f; // seconds
+    [SerializeField] private float _perfectThreshold = 100f; // seconds
     [SerializeField] private GameObject[] _balls;
     public AudioClip passSound;
     public AudioClip backgroundMusic; // Added for background music
@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
                 {
                     _audioSource.PlayOneShot(passSound, 2f); // Play with a higher volume of 0.5f
                 }
-                if (_perfectTimer <= PERFECT_THRESHOLD && !_touchedRim)
+                if (_perfectTimer <= _perfectThreshold && !_touchedRim)
                 {
                     if (perfectSound != null && _audioSource != null)
                     {

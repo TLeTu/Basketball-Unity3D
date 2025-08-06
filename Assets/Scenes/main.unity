@@ -3114,6 +3114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d94e4ef1c45a8786b847a1695060dbb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _perfectThreshold: 5
   _balls:
   - {fileID: 736957724}
   - {fileID: 1057096703}
@@ -4415,7 +4416,6 @@ GameObject:
   - component: {fileID: 2878013518752252543}
   - component: {fileID: 2878013519591113515}
   - component: {fileID: 2878013519674999600}
-  - component: {fileID: 2878013519674999601}
   m_Layer: 0
   m_Name: BasketRingJoint
   m_TagString: 
@@ -4888,6 +4888,7 @@ GameObject:
   - component: {fileID: 2878013519591113516}
   - component: {fileID: 2878013520966845279}
   - component: {fileID: 2878013520966845278}
+  - component: {fileID: 2878013520966845280}
   m_Layer: 0
   m_Name: basketRing
   m_TagString: Untagged
@@ -8191,18 +8192,6 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &2878013519674999601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2878013518701920491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bcf553291c3faeebb384335a324b289, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &2878013519775662897
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9224,6 +9213,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionSound: {fileID: 8300000, guid: 0e7290560d9cc1c1000000000000006e, type: 3}
+--- !u!114 &2878013520966845280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2878013518701920688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bcf553291c3faeebb384335a324b289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!137 &2878013520983622494
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
