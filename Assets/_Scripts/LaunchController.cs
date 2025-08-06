@@ -34,17 +34,37 @@ public class LaunchController : MonoBehaviour
     /// Launches the ball toward the landing target using kinematic equations.
     /// </summary>
     /// <param name="launchObject">The ball GameObject to launch.</param>
-    public void LaunchBall(GameObject launchObject)
+    /// <param name="swipeDirection">The swipe direction vector from player input.</param>
+    public void LaunchBall(GameObject launchObject, Vector3 swipeDirection)
     {
         Debug.Log("Launching ball with LaunchControl");
         // Calculate relative positions
         y_0 = launchObject.transform.position.y - landingTarget.transform.position.y;
-        x = landingTarget.transform.position.x - launchObject.transform.position.x;
+        
+        // Use swipe direction for X calculation instead of targeting landing object's X
+        // Normalize swipe and scale it based on distance to target for reasonable trajectory
+        float baseDistance = Vector3.Distance(
+            new Vector3(launchObject.transform.position.x, 0, launchObject.transform.position.z),
+            new Vector3(landingTarget.transform.position.x, 0, landingTarget.transform.position.z)
+        );
+        
+        // Scale the X direction based on swipe direction (normalized) and base distance
+        x = swipeDirection.normalized.x * baseDistance;
         z = landingTarget.transform.position.z - launchObject.transform.position.z;
 
         // Launch using rigidbody velocity
         Rigidbody thisBody = launchObject.GetComponent<Rigidbody>();
         thisBody.velocity = CalculateVelocity();
+    }
+
+    /// <summary>
+    /// Launches the ball toward the landing target using kinematic equations (legacy method).
+    /// </summary>
+    /// <param name="launchObject">The ball GameObject to launch.</param>
+    public void LaunchBall(GameObject launchObject)
+    {
+        // Default behavior - launch straight toward target
+        LaunchBall(launchObject, Vector3.up);
     }
 
     /// <summary>

@@ -79,7 +79,9 @@ public class BallController : MonoBehaviour
         {
             if (_launchControl != null)
             {
-                _launchControl.LaunchBall(gameObject);
+                // Convert screen space swipe to world space direction
+                Vector3 worldSwipeDirection = _mainCamera.ScreenToWorldPoint(new Vector3(swipe.x, swipe.y, _mainCamera.nearClipPlane));
+                _launchControl.LaunchBall(gameObject, swipe);
             }
             else
             {
