@@ -1,0 +1,193 @@
+Authorized using stored user info.
+stderr: 'rm' is not recognized as an internal or external command,
+operable program or batch file.
+
+Exporting assets from Unity........................
+
+[ Stage1 ] Assets exported from Unity and staged for further processing
+Using E:/Projects/Basketball-Unity3D/Assets/TextMesh Pro/Fonts/LiberationSans.ttf file to generate an atlas for LiberationSans[24438] font
+  Using alphabet  §1234567890-=qwertyuiop[]asdfghjkl;'\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"|~ZXCVBNM<>?
+Combined 97 glyphs into bitmap texture at E:/Projects/Basketball-Unity3D/LunaTemp/stage1/tmp/fonts/LiberationSans-24438/output_0.png (56kb)
+Found custom rules for texture Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  {"maxWidth":512,"maxHeight":512,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset","isOverride":true}
+Resources:
+{}
+[ Stage2 ] Assets postprocessed and bundled successfully
+Authorized using stored user info.
+MSBuild version 17.14.18+a338add32 for .NET Framework
+
+Build started 8/7/2025 12:07:02 PM.
+
+
+
+Project "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" on node 1 (Rebuild target(s)).
+
+CoreClean:
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.pdb".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\JetBrains.dll".
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.dll".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.xml".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.xml".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.xml".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.xml".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.AssemblyReference.cache".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.CoreCompileInputs.cache".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.dll".
+
+  Deleting file "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.pdb".
+
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+
+CoreCompile:
+  E:\Programs\VS\2022\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:CS0626,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:UNITY_LUNA;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_2022;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2022_3;UNITY_2022_3_62 /highentropyva+ /reference:E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll /reference:E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll /reference:E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll /reference:E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll /reference:E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll /reference:E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll /reference:E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll /reference:E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll /reference:E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll /reference:E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll /reference:E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll /reference:E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll /reference:E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll /reference:E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll /debug+ /debug:full /optimize- /out:obj\Debug\UnityScriptsCompiler.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /langversion:8 E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\AudioController.cs E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\BackBtn.cs E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\BallCarousel.cs E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\BallController.cs E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\BallSelection.cs E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\BallSelectionBtn.cs E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\GameManager.cs E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\HoopTrigger.cs E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\LaunchController.cs E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\RimCollider.cs E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\RotateRing.cs E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\ScoreManager.cs E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\ScoreUI.cs E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\SpriteRender.cs E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\TutorialInfo\Scripts\Readme.cs Properties/AssemblyInfo.cs Sources/OtherDummyScript.cs "obj\Debug\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+
+E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\GameManager.cs(12,43): warning CS0649: Field 'GameManager._balls' is never assigned to, and will always have its default value null [E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\BallSelectionBtn.cs(7,41): warning CS0649: Field 'BallSelectionBtn._ballSelectionCanvas' is never assigned to, and will always have its default value null [E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\BallSelectionBtn.cs(8,41): warning CS0649: Field 'BallSelectionBtn._inGameCanvas' is never assigned to, and will always have its default value null [E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\BallSelectionBtn.cs(9,41): warning CS0649: Field 'BallSelectionBtn._ballCarousel' is never assigned to, and will always have its default value null [E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\ScoreUI.cs(9,46): warning CS0649: Field 'ScoreUI._perfectScoreText' is never assigned to, and will always have its default value null [E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\BallCarousel.cs(12,43): warning CS0649: Field 'BallCarousel.balls' is never assigned to, and will always have its default value null [E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+  CompilerServer: server - server processed compilation - Scripts
+
+_CopyFilesMarkedCopyLocal:
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll".
+
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\JetBrains.dll".
+
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll".
+
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll".
+
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll".
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll".
+
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll".
+
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll".
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll".
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll".
+
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.dll".
+
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll".
+
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll".
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll".
+
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.xml" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml".
+
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.xml" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml".
+
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.xml" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml".
+
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.xml" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.xml".
+
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.xml" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.xml".
+
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.xml" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.xml".
+
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.xml" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.xml".
+
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.xml" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml".
+
+  Creating "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date" because "AlwaysCreate" was specified.
+
+  Touching "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date".
+
+CopyFilesToOutputDirectory:
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.dll" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll".
+
+  Scripts -> E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll
+
+  Copying file from "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.pdb" to "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.pdb".
+
+BridgeNetCompilerTask:
+  Bridge started
+
+      To enable detailed logging, configure "logging" in bridge.json.
+      https://github.com/bridgedotnet/Bridge/wiki/global-configuration#logging
+
+  Bridge done
+
+Done Building Project "E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" (Rebuild target(s)).
+
+
+
+Build succeeded.
+
+
+
+"E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" (Rebuild target) (1) ->
+(CoreCompile target) -> 
+  E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\GameManager.cs(12,43): warning CS0649: Field 'GameManager._balls' is never assigned to, and will always have its default value null [E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\BallSelectionBtn.cs(7,41): warning CS0649: Field 'BallSelectionBtn._ballSelectionCanvas' is never assigned to, and will always have its default value null [E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\BallSelectionBtn.cs(8,41): warning CS0649: Field 'BallSelectionBtn._inGameCanvas' is never assigned to, and will always have its default value null [E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\BallSelectionBtn.cs(9,41): warning CS0649: Field 'BallSelectionBtn._ballCarousel' is never assigned to, and will always have its default value null [E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\ScoreUI.cs(9,46): warning CS0649: Field 'ScoreUI._perfectScoreText' is never assigned to, and will always have its default value null [E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  E:\Projects\Basketball-Unity3D\LunaTemp\stage3\processed-scripts\Assets\_Scripts\BallCarousel.cs(12,43): warning CS0649: Field 'BallCarousel.balls' is never assigned to, and will always have its default value null [E:\Projects\6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+
+    6 Warning(s)
+    0 Error(s)
+
+
+Time Elapsed 00:00:18.28
+
+Source code compiled successfully!
+[ error ] $﻿
+﻿
+PHC: LP error code not found in JSON: 3015, JSON file might be outdated. Error message: Sequence contains no matching element
+
+Diagnostics gathered successfully
+[ Stage3 ] Code compiled and bundled successfully.
+[ Stage4 ] Target platform: playground
+[ Stage4 ] Package bundled successfully
+[ Stage4 ] Package uploaded successfully

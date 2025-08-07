@@ -3,6 +3,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class BallController : MonoBehaviour
 {
+    // Static reference to the currently dragged ball
+    private static BallController _currentlyDraggingBall = null;
     #region Fields & Properties
     // References
     private Camera _mainCamera;
@@ -36,43 +38,42 @@ public class BallController : MonoBehaviour
         _launchControl = FindObjectOfType<LaunchController>();
     }
 
-    private void OnMouseDown()
-    {
-        HandlePointerDown(Input.mousePosition);
-    }
-
-    private void OnMouseDrag()
-    {
-        HandlePointerDrag(Input.mousePosition);
-    }
-
-    private void OnMouseUp()
-    {
-        HandlePointerUp(Input.mousePosition);
-    }
 
     private void Update()
     {
-        // Touch input support
-        if (Input.touchCount > 0)
+        if (Input.GetMouseButtonDown(0))
         {
-            Touch touch = Input.GetTouch(0);
-            switch (touch.phase)
+            // Raycast to see if this ball is under the mouse
+            Ray ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))
             {
-                case TouchPhase.Began:
-                    HandlePointerDown(touch.position);
-                    break;
-                case TouchPhase.Moved:
-                case TouchPhase.Stationary:
-                    HandlePointerDrag(touch.position);
-                    break;
-                case TouchPhase.Ended:
-                case TouchPhase.Canceled:
-                    HandlePointerUp(touch.position);
-                    break;
+                BallController ball = hit.collider.GetComponent<BallController>();
+                if (ball == this)
+                {
+                    _currentlyDraggingBall = this;
+                    HandlePointerDown(Input.mousePosition);
+                }
+            }
+        }
+        else if (Input.GetMouseButton(0))
+        {
+            if (_currentlyDraggingBall == this)
+            {
+                HandlePointerDrag(Input.mousePosition);
+            }
+        }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            if (_currentlyDraggingBall == this)
+            {
+                HandlePointerUp(Input.mousePosition);
+                _currentlyDraggingBall = null;
             }
         }
     }
+
+
 
     private void FixedUpdate()
     {

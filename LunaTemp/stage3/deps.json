@@ -1,0 +1,41 @@
+{
+  "ignores": [],
+  "groups": [
+    [
+      "E:/Projects/Basketball-Unity3D/LunaTemp/stage3/processed-scripts/Assets/_Scripts/AudioController.cs"
+    ],
+    [
+      "E:/Projects/Basketball-Unity3D/LunaTemp/stage3/processed-scripts/Assets/_Scripts/BackBtn.cs"
+    ],
+    [
+      "E:/Projects/Basketball-Unity3D/LunaTemp/stage3/processed-scripts/Assets/_Scripts/BallCarousel.cs",
+      "E:/Projects/Basketball-Unity3D/LunaTemp/stage3/processed-scripts/Assets/_Scripts/BallSelectionBtn.cs",
+      "E:/Projects/Basketball-Unity3D/LunaTemp/stage3/processed-scripts/Assets/_Scripts/GameManager.cs",
+      "E:/Projects/Basketball-Unity3D/LunaTemp/stage3/processed-scripts/Assets/_Scripts/HoopTrigger.cs",
+      "E:/Projects/Basketball-Unity3D/LunaTemp/stage3/processed-scripts/Assets/_Scripts/RimCollider.cs",
+      "E:/Projects/Basketball-Unity3D/LunaTemp/stage3/processed-scripts/Assets/_Scripts/ScoreManager.cs",
+      "E:/Projects/Basketball-Unity3D/LunaTemp/stage3/processed-scripts/Assets/_Scripts/ScoreUI.cs",
+      "E:/Projects/Basketball-Unity3D/LunaTemp/stage3/processed-scripts/Assets/_Scripts/BallController.cs",
+      "E:/Projects/Basketball-Unity3D/LunaTemp/stage3/processed-scripts/Assets/_Scripts/LaunchController.cs",
+      "E:/Projects/Basketball-Unity3D/LunaTemp/stage3/processed-scripts/Assets/_Scripts/BallSelection.cs"
+    ],
+    [
+      "E:/Projects/Basketball-Unity3D/LunaTemp/stage3/processed-scripts/Assets/_Scripts/RotateRing.cs"
+    ],
+    [
+      "E:/Projects/Basketball-Unity3D/LunaTemp/stage3/processed-scripts/Assets/_Scripts/SpriteRender.cs"
+    ],
+    [
+      "E:/Projects/Basketball-Unity3D/LunaTemp/stage3/processed-scripts/Assets/TutorialInfo/Scripts/Readme.cs"
+    ],
+    [
+      "E:/Projects/6.3.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "E:/Projects/6.3.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "E:/Projects/6.3.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}

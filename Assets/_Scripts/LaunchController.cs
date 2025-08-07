@@ -18,17 +18,6 @@ public class LaunchController : MonoBehaviour
     private float z;
     #endregion
 
-    #region Unity Methods
-    void Start()
-    {
-        // Find the landing target by tag if not set in inspector
-        if (landingTarget == null)
-        {
-            landingTarget = GameObject.FindGameObjectWithTag("Hoop");
-        }
-    }
-    #endregion
-
     #region Launch Methods
     /// <summary>
     /// Launches the ball toward the landing target using kinematic equations.
